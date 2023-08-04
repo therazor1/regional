@@ -1,0 +1,14 @@
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, serif;
+}
+
+table, th, td {
+    /*border: 1px solid black;*/
+}
+
+.table-border, .table-border th, .table-border td {
+    border-bottom: 1px solid #DDD;
+}

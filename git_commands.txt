@@ -1,0 +1,19 @@
+git status
+git add .
+git commit -m "Dashboard filtro por zona complete"
+git push
+git log -2
+
+
+FORZARPULL: git reset --hard HEAD && git clean -f -d && git pull origin master
+
+C:\src\flutter\bin\flutter build apk
+C:\src\flutter\bin\flutter pub get
+C:\src\flutter\bin\flutter clean
+C:\src\flutter\bin\flutter doctor
+C:\src\flutter\bin\flutter doctor -v
+C:\src\flutter\bin\flutter --version
+C:\src\flutter\bin\flutter doctor --android-licenses
+
+
+

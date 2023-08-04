@@ -1,0 +1,1 @@
+SELECT op.*, ot.name AS ot_name, CONCAT(ma.code ,' ', ma.name) AS ma_name, CONCAT(pe.name ,' ', pe.surname) AS pe_name FROM ot_personals op INNER JOIN ots ot ON ot.id = op.id_ot INNER JOIN personals pe ON pe.id = op.id_personal INNER JOIN managements ma ON ma.id = ot.id_management WHERE op.state = '1' AND op.type = 2 GROUP BY op.id_personal

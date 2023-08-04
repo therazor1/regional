@@ -1,0 +1,1 @@
+SELECT ov.*, ot.name AS ot_name, ve.brand AS ve_brand, ve.model AS ve_model, ve.plate AS ve_plate, CONCAT(ma.code ,' ', ma.name) AS ma_name FROM ot_vehicles ov INNER JOIN ots ot ON ot.id = ov.id_ot INNER JOIN vehicles ve ON ve.id = ov.id_vehicle INNER JOIN managements ma ON ma.id = ot.id_management WHERE ov.state = '1'

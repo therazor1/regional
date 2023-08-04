@@ -1,0 +1,2436 @@
+[
+  {
+    "codigo": "P-407002",
+    "fecha_adquisicion": "2014-12-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Autobus DONDFENG DF-3585",
+    "marca": "DONDFENG",
+    "modelo": "DF-3585",
+    "serie": "87365962",
+    "placa": "FRCG-22"
+  },
+  {
+    "codigo": "P-112001",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201401300075"
+  },
+  {
+    "codigo": "P-112002",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201401300076"
+  },
+  {
+    "codigo": "P-112004",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201312280026"
+  },
+  {
+    "codigo": "P-112005",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201312280025"
+  },
+  {
+    "codigo": "P-112006",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201401310008"
+  },
+  {
+    "codigo": "P-112007",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201401300064"
+  },
+  {
+    "codigo": "P-112008",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201401310021"
+  },
+  {
+    "codigo": "P-112010",
+    "fecha_adquisicion": "2014-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201402150004"
+  },
+  {
+    "codigo": "P-112011",
+    "fecha_adquisicion": "2014-08-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201502150023"
+  },
+  {
+    "codigo": "P-112012",
+    "fecha_adquisicion": "2014-08-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201403280005"
+  },
+  {
+    "codigo": "P-112013",
+    "fecha_adquisicion": "2014-09-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201403030106"
+  },
+  {
+    "codigo": "P-112014",
+    "fecha_adquisicion": "2014-09-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201403030107"
+  },
+  {
+    "codigo": "P-112018",
+    "fecha_adquisicion": "2014-09-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201403040058"
+  },
+  {
+    "codigo": "P-112019",
+    "fecha_adquisicion": "2014-09-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201403040083"
+  },
+  {
+    "codigo": "P-112020",
+    "fecha_adquisicion": "2014-09-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Compresor Sullair 375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "marca": "Sullair ",
+    "modelo": "375DPQ / 10,6 [m³/min] a 7 [bar]",
+    "serie": "201403040024"
+  },
+  {
+    "codigo": "P-040001",
+    "fecha_adquisicion": "2012-08-01",
+    "rubro": "UTILLAJE",
+    "nombre": "Luminaria Wanco WLTC4 ",
+    "marca": "Wanco",
+    "modelo": "WLTC4 ",
+    "serie": "5F13D1413B1003206"
+  },
+  {
+    "codigo": "P-040002",
+    "fecha_adquisicion": "2012-08-01",
+    "rubro": "UTILLAJE",
+    "nombre": "Luminaria Wanco WLTC4 ",
+    "marca": "Wanco",
+    "modelo": "WLTC5",
+    "serie": "5F13D1419B1003209"
+  },
+  {
+    "codigo": "P-040003",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24393048"
+  },
+  {
+    "codigo": "P-040004",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24393051"
+  },
+  {
+    "codigo": "P-040005",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24405758"
+  },
+  {
+    "codigo": "P-040006",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24405761"
+  },
+  {
+    "codigo": "P-040007",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24405762"
+  },
+  {
+    "codigo": "P-040008",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24427424"
+  },
+  {
+    "codigo": "P-040009",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24354326"
+  },
+  {
+    "codigo": "P-040010",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24371818"
+  },
+  {
+    "codigo": "P-040011",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24371820"
+  },
+  {
+    "codigo": "P-040012",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24343348"
+  },
+  {
+    "codigo": "P-040013",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24371815"
+  },
+  {
+    "codigo": "P-040014",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24369199"
+  },
+  {
+    "codigo": "P-040015",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24369200"
+  },
+  {
+    "codigo": "P-040016",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24343352"
+  },
+  {
+    "codigo": "P-040017",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24393054"
+  },
+  {
+    "codigo": "P-040018",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24371817"
+  },
+  {
+    "codigo": "P-040019",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24343343"
+  },
+  {
+    "codigo": "P-040020",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "sn"
+  },
+  {
+    "codigo": "P-040021",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24354331"
+  },
+  {
+    "codigo": "P-040022",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24354327"
+  },
+  {
+    "codigo": "P-040023",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24405759"
+  },
+  {
+    "codigo": "P-040024",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Luminaria Wacker Neuson LTN6L",
+    "marca": "Wacker",
+    "modelo": "Neuson LTN6L",
+    "serie": "24371812"
+  },
+  {
+    "codigo": "P-023001",
+    "fecha_adquisicion": "2020-02-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Generador Lureye J66K",
+    "marca": "Lureye ",
+    "modelo": "J66K",
+    "serie": "J66K17006865",
+    "num_motor": "136380"
+  },
+  {
+    "codigo": "P-023002",
+    "fecha_adquisicion": "2020-02-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Generador Lureye J66K",
+    "marca": "Lureye ",
+    "modelo": "J66K",
+    "serie": "J66K17006512",
+    "num_motor": "136204"
+  },
+  {
+    "codigo": "P-023003",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Generador Lureye Diesel 10000 EXL",
+    "marca": "Lureye ",
+    "modelo": "Diesel 10000 EXL",
+    "serie": "2017176"
+  },
+  {
+    "codigo": "P-023004",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Generador Lureye Diesel 10000 EXL",
+    "marca": "Lureye ",
+    "modelo": "Diesel 10000 EXL",
+    "serie": "2017190"
+  },
+  {
+    "codigo": "P-023005",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Generador Lureye Diesel 10000 EXL",
+    "marca": "Lureye ",
+    "modelo": "Diesel 10000 EXL",
+    "serie": "2017191"
+  },
+  {
+    "codigo": "P-023006",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Generador Lureye T16K",
+    "marca": "Lureye",
+    "modelo": "T16K",
+    "serie": "T16K17003526"
+  },
+  {
+    "codigo": "P-025002",
+    "fecha_adquisicion": "2001-04-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Generador Emaresa EG100 / 100 [kvA]",
+    "marca": "Emaresa ",
+    "modelo": "EG100 / 100 [kvA]",
+    "serie": "87205837"
+  },
+  {
+    "codigo": "P-025003",
+    "fecha_adquisicion": "2020-02-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Generador Lureye J110K / 110 [kvA]",
+    "marca": "Lureye ",
+    "modelo": "J110K / 110 [kvA]",
+    "serie": "J110K17003167",
+    "num_motor": "134477"
+  },
+  {
+    "codigo": "P-731003",
+    "fecha_adquisicion": "2007-12-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T1802",
+    "num_motor": "10337494"
+  },
+  {
+    "codigo": "P-731005",
+    "fecha_adquisicion": "2007-12-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T2069",
+    "num_motor": "10582674"
+  },
+  {
+    "codigo": "P-731011",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T0682"
+  },
+  {
+    "codigo": "P-731013",
+    "fecha_adquisicion": "2013-11-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3510",
+    "num_motor": "11421673"
+  },
+  {
+    "codigo": "P-731014",
+    "fecha_adquisicion": "2013-11-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3511",
+    "num_motor": "11418866"
+  },
+  {
+    "codigo": "P-731016",
+    "fecha_adquisicion": "2013-11-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3513",
+    "num_motor": "11418869"
+  },
+  {
+    "codigo": "P-731017",
+    "fecha_adquisicion": "2013-11-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3451",
+    "num_motor": "11404242"
+  },
+  {
+    "codigo": "P-731019",
+    "fecha_adquisicion": "2014-02-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3540",
+    "num_motor": "11423597"
+  },
+  {
+    "codigo": "P-731023",
+    "fecha_adquisicion": "2014-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3646",
+    "num_motor": "11464955"
+  },
+  {
+    "codigo": "P-731025",
+    "fecha_adquisicion": "2014-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3645",
+    "num_motor": "11464956"
+  },
+  {
+    "codigo": "P-731026",
+    "fecha_adquisicion": "2014-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3731",
+    "num_motor": "11466151"
+  },
+  {
+    "codigo": "P-731028",
+    "fecha_adquisicion": "2014-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3718",
+    "num_motor": "11464964"
+  },
+  {
+    "codigo": "P-731029",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3732",
+    "num_motor": "11466144"
+  },
+  {
+    "codigo": "P-731030",
+    "fecha_adquisicion": "2014-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3739",
+    "num_motor": "11466146"
+  },
+  {
+    "codigo": "P-731031",
+    "fecha_adquisicion": "2014-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3737",
+    "num_motor": "11457801"
+  },
+  {
+    "codigo": "P-731038",
+    "fecha_adquisicion": "2014-07-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Bomba Hormigon Putzmeister TK40 / 30 [m³/hr]",
+    "marca": "Putzmeister",
+    "modelo": "TK40 / 30 [m³/hr]",
+    "serie": "2106T3800",
+    "num_motor": "11481347"
+  },
+  {
+    "codigo": "P-723001",
+    "fecha_adquisicion": "2015-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460B / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF09C5341"
+  },
+  {
+    "codigo": "P-723002",
+    "fecha_adquisicion": "2015-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460B / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF09C5342"
+  },
+  {
+    "codigo": "P-723003",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460B / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF09C5354"
+  },
+  {
+    "codigo": "P-723004",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460B / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF09C5355"
+  },
+  {
+    "codigo": "P-723005",
+    "fecha_adquisicion": "2015-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460B / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF09C5361"
+  },
+  {
+    "codigo": "P-723006",
+    "fecha_adquisicion": "2015-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460B / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF09C5362"
+  },
+  {
+    "codigo": "P-723007",
+    "fecha_adquisicion": "2015-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460B / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF09C5363"
+  },
+  {
+    "codigo": "P-723008",
+    "fecha_adquisicion": "2015-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460B / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF09C5364"
+  },
+  {
+    "codigo": "P-723009",
+    "fecha_adquisicion": "2015-08-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00961"
+  },
+  {
+    "codigo": "P-723010",
+    "fecha_adquisicion": "2015-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00903"
+  },
+  {
+    "codigo": "P-723011",
+    "fecha_adquisicion": "2015-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00904"
+  },
+  {
+    "codigo": "P-723012",
+    "fecha_adquisicion": "2015-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00905"
+  },
+  {
+    "codigo": "P-723013",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00906"
+  },
+  {
+    "codigo": "P-723014",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00907"
+  },
+  {
+    "codigo": "P-723015",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00908"
+  },
+  {
+    "codigo": "P-723016",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00909"
+  },
+  {
+    "codigo": "P-723017",
+    "fecha_adquisicion": "2015-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00912"
+  },
+  {
+    "codigo": "P-723018",
+    "fecha_adquisicion": "2015-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00913"
+  },
+  {
+    "codigo": "P-723019",
+    "fecha_adquisicion": "2015-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00914"
+  },
+  {
+    "codigo": "P-723020",
+    "fecha_adquisicion": "2015-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Autohormigonera Fiori DB460 / 4 [m³]",
+    "marca": "Fiori ",
+    "modelo": "DB460B / 4 [m³]",
+    "serie": "BF08H00915"
+  },
+  {
+    "codigo": "P-443002",
+    "fecha_adquisicion": "2012-01-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Aljibe VolksWagen 31.260E / 15.000 [lt]",
+    "marca": "VolksWagen ",
+    "modelo": "31.260E / 15.000 [lt]",
+    "serie": "9533B82U8CR227079",
+    "placa": "DSBV-62"
+  },
+  {
+    "codigo": "P-443004",
+    "fecha_adquisicion": "2017-04-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Aljibe Volvo FMX500 / 30.000 [lt]",
+    "marca": "Volvo ",
+    "modelo": "FMX500 / 30.000 [lt]",
+    "serie": "93KXG30GXHE844194",
+    "num_motor": "D13907380C2E",
+    "placa": "JLJK-69"
+  },
+  {
+    "codigo": "P-443005",
+    "fecha_adquisicion": "2017-04-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Aljibe Volvo FMX500 / 30.000 [lt]",
+    "marca": "Volvo ",
+    "modelo": "FMX500 / 30.000 [lt]",
+    "serie": "96KXG30G7HE844248",
+    "num_motor": "D13907433C2E",
+    "placa": "JKYZ-23"
+  },
+  {
+    "codigo": "P-443006",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Aljibe Volvo FMX500 / 30.000 [lt]",
+    "marca": "Volvo ",
+    "modelo": "FMX500 / 30.000 [lt]",
+    "serie": "93KXG30G4HE844166",
+    "num_motor": "D13907351C2E",
+    "placa": "JKYZ-22"
+  },
+  {
+    "codigo": "P-445001",
+    "fecha_adquisicion": "2017-04-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Lubricador Volvo VM220",
+    "marca": "Volvo ",
+    "modelo": "VM220",
+    "serie": "93KK0R1A6HE158350",
+    "placa": "JPVZ-80"
+  },
+  {
+    "codigo": "P-445002",
+    "fecha_adquisicion": "2018-01-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión 3/4 Hyundai HD-65",
+    "marca": "Hyundai ",
+    "modelo": " HD-65",
+    "serie": "KMFGA17HPPJC314130",
+    "placa": "JZSJ-45"
+  },
+  {
+    "codigo": "P-446003",
+    "fecha_adquisicion": "2011-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Pluma VolksWagen 9.150 E / Pluma HIAB 052 0,72 [ton]",
+    "marca": "VolksWagen ",
+    "modelo": " 9.150 E / Pluma HIAB 052 0,72 [ton]",
+    "serie": "9533A52R7BR144044",
+    "placa": "DCJP-68"
+  },
+  {
+    "codigo": "P-446004",
+    "fecha_adquisicion": "2011-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Pluma Volvo VM220 / Pluma Cormach 18000E3 7 [ton]",
+    "marca": "Volvo ",
+    "modelo": "VM220 / Pluma Cormach 18000E3 7 [ton]",
+    "serie": "93KKSN0A1FE151093",
+    "placa": "GXBV-14"
+  },
+  {
+    "codigo": "P-421001",
+    "fecha_adquisicion": "2011-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Tractocamion VolksWagen 19.320 E",
+    "marca": "VolksWagen ",
+    "modelo": "19.320 E",
+    "serie": "9535J8276BR129995",
+    "placa": "CZXG-88"
+  },
+  {
+    "codigo": "P-455001",
+    "fecha_adquisicion": "2011-04-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Rampla Facchini S P 3 13.000 / 12 [m]",
+    "marca": "Facchini ",
+    "modelo": "S P 3 13.000 / 12 [m]",
+    "serie": "94BP1303ABV028872",
+    "placa": "JB-5924"
+  },
+  {
+    "codigo": "P-456001",
+    "fecha_adquisicion": "2011-04-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Cama Baja Tremac SRTCB50 3R / 50 [ton]",
+    "marca": "Tremac ",
+    "modelo": "SRTCB50 3R / 50 [ton]",
+    "serie": "796310",
+    "placa": "JL-1757-2"
+  },
+  {
+    "codigo": "P-423007",
+    "fecha_adquisicion": "2011-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J8261BR128904",
+    "num_motor": "36227566",
+    "placa": "CXKV-67"
+  },
+  {
+    "codigo": "P-423009",
+    "fecha_adquisicion": "2011-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J8265BR141686",
+    "num_motor": "36278961",
+    "placa": "CXKV-75"
+  },
+  {
+    "codigo": "P-423011",
+    "fecha_adquisicion": "2011-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J8261BR141670",
+    "num_motor": "36278938",
+    "placa": "CXKV-77"
+  },
+  {
+    "codigo": "P-423015",
+    "fecha_adquisicion": "2011-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J8266BR132382",
+    "num_motor": "36265619",
+    "placa": "DBKS-20"
+  },
+  {
+    "codigo": "P-423028",
+    "fecha_adquisicion": "2012-08-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J8266CR237490",
+    "num_motor": "36366043",
+    "placa": "DVFL-33"
+  },
+  {
+    "codigo": "P-423032",
+    "fecha_adquisicion": "2012-08-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J8266CR234511",
+    "num_motor": "36367878",
+    "placa": "DTBK-77"
+  },
+  {
+    "codigo": "P-423033",
+    "fecha_adquisicion": "2012-08-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J8268CR237443",
+    "num_motor": "36367901",
+    "placa": "DVRG-83"
+  },
+  {
+    "codigo": "P-423036",
+    "fecha_adquisicion": "2012-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J8261CR234481",
+    "placa": "DVRG-79"
+  },
+  {
+    "codigo": "P-423038",
+    "fecha_adquisicion": "2012-08-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J8260CR234214",
+    "placa": "DTBK-79"
+  },
+  {
+    "codigo": "P-423042",
+    "fecha_adquisicion": "2012-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J826XCR239033",
+    "placa": "DVVP-38"
+  },
+  {
+    "codigo": "P-423043",
+    "fecha_adquisicion": "2012-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.320E Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9534J8262CR240631",
+    "placa": "DTBK-83"
+  },
+  {
+    "codigo": "P-423050",
+    "fecha_adquisicion": "2012-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.330 Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9536Y8261CR244108",
+    "placa": "FGGT-89"
+  },
+  {
+    "codigo": "P-423051",
+    "fecha_adquisicion": "2012-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.330 Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9596Y8263CR243610",
+    "placa": "FGGT-86"
+  },
+  {
+    "codigo": "P-423061",
+    "fecha_adquisicion": "2012-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.330 Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9536Y8268DR248402",
+    "placa": "FGGT-81"
+  },
+  {
+    "codigo": "P-423065",
+    "fecha_adquisicion": "2012-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva VolksWagen 31.330 Constellation / 14[m³]",
+    "marca": "VolksWagen ",
+    "modelo": "31.320E Constellation / 14[m³]",
+    "serie": "9536Y8264DR248333",
+    "placa": "FGGT-74"
+  },
+  {
+    "codigo": "P-424001",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30GXHE842049",
+    "num_motor": "D13905165C2E",
+    "placa": "GYLG-46"
+  },
+  {
+    "codigo": "P-424002",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G8HE842122",
+    "num_motor": "D13905242C2E",
+    "placa": "GYLG-47"
+  },
+  {
+    "codigo": "P-424003",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G3HE842150",
+    "num_motor": "D13905274C2E",
+    "placa": "GYLG-48"
+  },
+  {
+    "codigo": "P-424004",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G0HE842191",
+    "num_motor": "D13905355C2E",
+    "placa": "JLLC-26"
+  },
+  {
+    "codigo": "P-424005",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G0HE842225",
+    "num_motor": "D13905364C2E",
+    "placa": "JLLC-27"
+  },
+  {
+    "codigo": "P-424006",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G3HE842226",
+    "num_motor": "D13905371C2E",
+    "placa": "JLLC-28"
+  },
+  {
+    "codigo": "P-424007",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G6HE842227",
+    "num_motor": "D13905372C2E",
+    "placa": "GYLG-49"
+  },
+  {
+    "codigo": "P-424008",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G0HE842476",
+    "num_motor": "D13905609C2E",
+    "placa": "GYLG-50"
+  },
+  {
+    "codigo": "P-424009",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30GXHE842553",
+    "num_motor": "D13905705C2E",
+    "placa": "GYLG-51"
+  },
+  {
+    "codigo": "P-424010",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G0HE842617",
+    "num_motor": "D13905741C2E",
+    "placa": "JLLC-22"
+  },
+  {
+    "codigo": "P-424011",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G3HE842618",
+    "num_motor": "D13905747C2E",
+    "placa": "JLLC-23"
+  },
+  {
+    "codigo": "P-424012",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G6HE842619",
+    "num_motor": "D13905750C2E",
+    "placa": "JLLC-25"
+  },
+  {
+    "codigo": "P-424013",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G5HE842620",
+    "num_motor": "D13905766C2E",
+    "placa": "GYLG-43"
+  },
+  {
+    "codigo": "P-424014",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G4HE843105",
+    "num_motor": "D13906282C2E",
+    "placa": "GYLG-44"
+  },
+  {
+    "codigo": "P-424015",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G7HE843106",
+    "num_motor": "D13906295C2E",
+    "placa": "GYLG-45"
+  },
+  {
+    "codigo": "P-424016",
+    "fecha_adquisicion": "2017-04-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G1HE844251",
+    "num_motor": "D13907447C2E",
+    "placa": "JKYZ-25"
+  },
+  {
+    "codigo": "P-424017",
+    "fecha_adquisicion": "2017-04-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G4HE844252",
+    "num_motor": "D13907451C2E",
+    "placa": "JKYZ-26"
+  },
+  {
+    "codigo": "P-424018",
+    "fecha_adquisicion": "2017-04-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G9HE844224",
+    "num_motor": "D13907392C2E",
+    "placa": "JLJK-71"
+  },
+  {
+    "codigo": "P-424019",
+    "fecha_adquisicion": "2017-04-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "96KXG30GXHE844249",
+    "num_motor": "D13907422C2E",
+    "placa": "JKYZ-24"
+  },
+  {
+    "codigo": "P-424020",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G8HE842190",
+    "num_motor": "D13905347C2E",
+    "placa": "JKFD-61"
+  },
+  {
+    "codigo": "P-424021",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G3HE842477",
+    "num_motor": "D13905611C2E",
+    "placa": "JKFD-62"
+  },
+  {
+    "codigo": "P-424022",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30GXHE843669",
+    "num_motor": "D13906834C2E",
+    "placa": "JKFD-60"
+  },
+  {
+    "codigo": "P-424023",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G8HE842621",
+    "num_motor": "D13905768C2E",
+    "placa": "JKTZ-78"
+  },
+  {
+    "codigo": "P-424024",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G7HE843668",
+    "num_motor": "D13906827C2E",
+    "placa": "JKTZ-77"
+  },
+  {
+    "codigo": "P-424025",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G7HE844253",
+    "num_motor": "D13907456C2E",
+    "placa": "JKYZ-21"
+  },
+  {
+    "codigo": "P-424026",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G6HE844223",
+    "num_motor": "D13907384C2E",
+    "placa": "JLJK-70"
+  },
+  {
+    "codigo": "P-424027",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G1HE844225",
+    "num_motor": "D13907400C2E",
+    "placa": "JLJK-72"
+  },
+  {
+    "codigo": "P-424028",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G4HE844226",
+    "num_motor": "D13907409C2E",
+    "placa": "JLJK-73"
+  },
+  {
+    "codigo": "P-424029",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G9HE844250",
+    "num_motor": "D13907432C2E",
+    "placa": "JLJK-75"
+  },
+  {
+    "codigo": "P-424030",
+    "fecha_adquisicion": "2017-05-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G7HE844227",
+    "num_motor": "D13907418C2E",
+    "placa": "JLJK-77"
+  },
+  {
+    "codigo": "P-424031",
+    "fecha_adquisicion": "2017-07-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G3HE846255",
+    "num_motor": "D138001299C2E",
+    "placa": "JPZF-32"
+  },
+  {
+    "codigo": "P-424032",
+    "fecha_adquisicion": "2017-07-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G3HE846256",
+    "num_motor": "D138001303C2E",
+    "placa": "JPZF-33"
+  },
+  {
+    "codigo": "P-424033",
+    "fecha_adquisicion": "2017-07-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G0HE846254",
+    "num_motor": "D138001295C2E",
+    "placa": "JPZF-34"
+  },
+  {
+    "codigo": "P-424034",
+    "fecha_adquisicion": "2017-07-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G4HE844869",
+    "num_motor": "D13907977C2E",
+    "placa": "JPZF-35"
+  },
+  {
+    "codigo": "P-424035",
+    "fecha_adquisicion": "2017-07-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30GXHE846679",
+    "num_motor": "D138001720C2E",
+    "placa": "JPZF-36"
+  },
+  {
+    "codigo": "P-424036",
+    "fecha_adquisicion": "2017-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G9HE846680",
+    "num_motor": "D138001735C2E",
+    "placa": "JSVT-81"
+  },
+  {
+    "codigo": "P-424037",
+    "fecha_adquisicion": "2017-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G4HE846682",
+    "num_motor": "D138001743C2E",
+    "placa": "JSVT-82"
+  },
+  {
+    "codigo": "P-424038",
+    "fecha_adquisicion": "2017-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30G1HE846681",
+    "num_motor": "D138001739C2E",
+    "placa": "JSVT-79"
+  },
+  {
+    "codigo": "P-424039",
+    "fecha_adquisicion": "2017-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30GXJE847575",
+    "num_motor": "D138002606C2E",
+    "placa": "JSVT-80"
+  },
+  {
+    "codigo": "P-424040",
+    "fecha_adquisicion": "2017-09-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Camión Tolva Volvo FMX 500 / 22[m³]",
+    "marca": " Volvo",
+    "modelo": "FMX 500 / 22[m³]",
+    "serie": "93KXG30GXJE847571",
+    "num_motor": "D138002587C2E",
+    "placa": "JSVT-78"
+  },
+  {
+    "codigo": "P-209003",
+    "fecha_adquisicion": "2014-07-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Martillo Hidráulico Ana AB45S",
+    "marca": "Ana ",
+    "modelo": "AB45S",
+    "serie": "A13H-008"
+  },
+  {
+    "codigo": "P-209004",
+    "fecha_adquisicion": "2014-07-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Martillo Hidráulico Ana AB45S",
+    "marca": "Ana ",
+    "modelo": "AB45S",
+    "serie": "A13H-005"
+  },
+  {
+    "codigo": "P-209005",
+    "fecha_adquisicion": "2014-09-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Martillo Hidráulico Ana AB45S",
+    "marca": "Ana ",
+    "modelo": "AB45S",
+    "serie": "A13H-006"
+  },
+  {
+    "codigo": "P-209006",
+    "fecha_adquisicion": "2014-10-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Martillo Hidráulico Ana AB45S",
+    "marca": "Ana ",
+    "modelo": "AB45S",
+    "serie": "A13H-007"
+  },
+  {
+    "codigo": "P-209007",
+    "fecha_adquisicion": "2008-02-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Martillo Hidráulico Ana AB45S",
+    "marca": "Ana ",
+    "modelo": "AB45S",
+    "serie": "A14H-003"
+  },
+  {
+    "codigo": "P-209008",
+    "fecha_adquisicion": "2014-07-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Martillo Hidráulico Ana AB45S",
+    "marca": "Ana ",
+    "modelo": "AB45S",
+    "serie": "A14H-004"
+  },
+  {
+    "codigo": "P-209009",
+    "fecha_adquisicion": "2014-10-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Martillo Hidráulico Ana AB45S",
+    "marca": "Ana ",
+    "modelo": "AB45S",
+    "serie": "A14H-005"
+  },
+  {
+    "codigo": "P-209010",
+    "fecha_adquisicion": "2015-03-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Martillo Hidráulico Ana AB45S",
+    "marca": "Ana ",
+    "modelo": "AB45S",
+    "serie": "A14H-001"
+  },
+  {
+    "codigo": "P-209011",
+    "fecha_adquisicion": "2015-03-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Martillo Hidráulico Ana AB45S",
+    "marca": "Ana ",
+    "modelo": "AB45S",
+    "serie": "A14H-002"
+  },
+  {
+    "codigo": "P-209012",
+    "fecha_adquisicion": "2015-03-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Martillo Hidráulico Ana AB35S",
+    "marca": "Ana ",
+    "modelo": "AB45S",
+    "serie": "A14F-010"
+  },
+  {
+    "codigo": "P-209016",
+    "fecha_adquisicion": "2015-03-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Cizalla"
+  },
+  {
+    "codigo": "P-209018",
+    "fecha_adquisicion": "2015-03-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Cizalla"
+  },
+  {
+    "codigo": "P-209019",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Cizalla"
+  },
+  {
+    "codigo": "P-209020",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Acople Rápido FMA Excavadora SDLG 13 [ton]",
+    "marca": "FMA"
+  },
+  {
+    "codigo": "P-209021",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Acople Rápido FMA Excavadora SDLG 13 [ton]",
+    "marca": "FMA"
+  },
+  {
+    "codigo": "P-209022",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Acople Rápido FMA Excavadora SDLG 13 [ton]",
+    "marca": "FMA"
+  },
+  {
+    "codigo": "P-209023",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Acople Rápido FMA Excavadora SDLG 13 [ton]",
+    "marca": "FMA"
+  },
+  {
+    "codigo": "P-209027",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Equipo Excavacion / ADITAMENTO METRO"
+  },
+  {
+    "codigo": "P-264001",
+    "fecha_adquisicion": "2011-07-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Rodillo Compactador Caterpillar CS533E / 10 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "CS533E / 10 [ton]",
+    "serie": "TJLO1378",
+    "placa": "CRPH-83"
+  },
+  {
+    "codigo": "P-264002",
+    "fecha_adquisicion": "2011-07-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Rodillo Compactador Caterpillar CS533E / 10 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "CS533E / 10 [ton]",
+    "serie": "TJLO1449",
+    "placa": "CRPH-86"
+  },
+  {
+    "codigo": "P-264003",
+    "fecha_adquisicion": "2012-04-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Rodillo Compactador Caterpillar CS533E / 10 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "CS533E / 10 [ton]",
+    "serie": "TJLO2101",
+    "num_motor": "CST02761",
+    "placa": "DWZD-60"
+  },
+  {
+    "codigo": "P-264004",
+    "fecha_adquisicion": "2011-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Rodillo Compactador Hamm 3412 / 12 [ton]",
+    "marca": " Hamm",
+    "modelo": "3412 / 12 [ton]",
+    "serie": "H1802026",
+    "placa": "DLRD-51"
+  },
+  {
+    "codigo": "P-264005",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Rodillo Compactador Caterpillar CS79B / 20 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "CS79B / 20 [ton]",
+    "serie": "C7900146",
+    "placa": "JWDR-56"
+  },
+  {
+    "codigo": "P-264006",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Rodillo Compactador Caterpillar CS79B / 20 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "CS79B / 20 [ton]",
+    "serie": "C7900147",
+    "placa": "JWDR-55"
+  },
+  {
+    "codigo": "P-206003",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Retroexcavadora Caterpillar 416F2",
+    "marca": "Caterpillar ",
+    "modelo": " 416F2",
+    "serie": "LBF02103",
+    "placa": "JRTP-43"
+  },
+  {
+    "codigo": "P-207001",
+    "fecha_adquisicion": "2011-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Ruedas Caterpillar M318C / 21 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": " M318C / 21 [ton]",
+    "serie": "H2D00288",
+    "placa": "DCZT-57"
+  },
+  {
+    "codigo": "P-205002",
+    "fecha_adquisicion": "2011-12-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas Caterpillar 330 DME / 30 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "330 DME / 30 [ton]",
+    "serie": "MEY00226",
+    "placa": "DVCV-53"
+  },
+  {
+    "codigo": "P-205003",
+    "fecha_adquisicion": "2011-07-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas Caterpillar 336 DL / 36 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "336 DL / 36 [ton]",
+    "serie": "MT400931",
+    "placa": "CRPH-88"
+  },
+  {
+    "codigo": "P-205005",
+    "fecha_adquisicion": "2011-09-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas Caterpillar 329 DL / 29 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "329 DL / 29 [ton]",
+    "serie": "MNB00720",
+    "placa": "CSCJ-53"
+  },
+  {
+    "codigo": "P-205006",
+    "fecha_adquisicion": "2014-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG6150EED6150371"
+  },
+  {
+    "codigo": "P-205007",
+    "fecha_adquisicion": "2014-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150365"
+  },
+  {
+    "codigo": "P-205008",
+    "fecha_adquisicion": "2014-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150368"
+  },
+  {
+    "codigo": "P-205009",
+    "fecha_adquisicion": "2014-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150373"
+  },
+  {
+    "codigo": "P-205010",
+    "fecha_adquisicion": "2014-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150370"
+  },
+  {
+    "codigo": "P-205011",
+    "fecha_adquisicion": "2014-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150380"
+  },
+  {
+    "codigo": "P-205012",
+    "fecha_adquisicion": "2014-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150366"
+  },
+  {
+    "codigo": "P-205013",
+    "fecha_adquisicion": "2014-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150376"
+  },
+  {
+    "codigo": "P-205014",
+    "fecha_adquisicion": "2014-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150374"
+  },
+  {
+    "codigo": "P-205015",
+    "fecha_adquisicion": "2014-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150377"
+  },
+  {
+    "codigo": "P-205016",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150378"
+  },
+  {
+    "codigo": "P-205017",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150364",
+    "num_motor": "60135350"
+  },
+  {
+    "codigo": "P-205018",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150367"
+  },
+  {
+    "codigo": "P-205019",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150369"
+  },
+  {
+    "codigo": "P-205020",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150372"
+  },
+  {
+    "codigo": "P-205021",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150362"
+  },
+  {
+    "codigo": "P-205022",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150381"
+  },
+  {
+    "codigo": "P-205023",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150379"
+  },
+  {
+    "codigo": "P-205024",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150361"
+  },
+  {
+    "codigo": "P-205025",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas SDLG LG6150E / 14 [ton]",
+    "marca": "SDLG ",
+    "modelo": "LG6150E / 14 [ton]",
+    "serie": "VLG615OEAD6150375"
+  },
+  {
+    "codigo": "P-205026",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas Caterpillar 323D2L / 23 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "323D2L / 23 [ton]",
+    "serie": "KBX00172",
+    "placa": "JRTP-42"
+  },
+  {
+    "codigo": "P-205027",
+    "fecha_adquisicion": "2017-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Excavadora sobre Orugas Caterpillar 330D2L / 30 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "330D2L / 30 [ton]",
+    "serie": "SZK10158",
+    "placa": "JRTP-44"
+  },
+  {
+    "codigo": "P-515001",
+    "fecha_adquisicion": "2003-12-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Grua sobre Neumaticos Liebeher LTL 1030 / 30 [ton]",
+    "marca": " Liebeher",
+    "modelo": "LTL 1030 / 30 [ton]",
+    "serie": "W09220500WE15110",
+    "placa": "UX-6584"
+  },
+  {
+    "codigo": "P-231001",
+    "fecha_adquisicion": "2011-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Motoniveladora Caterpillar 140 H / 3,6 [m]",
+    "marca": "Caterpillar ",
+    "modelo": "140 H / 3,6 [m]",
+    "serie": "APMO1771",
+    "placa": "DCZT-59"
+  },
+  {
+    "codigo": "P-231002",
+    "fecha_adquisicion": "2011-07-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Motoniveladora Caterpillar 140 K / 3,6 [m]",
+    "marca": "Caterpillar ",
+    "modelo": "140 K / 3,6 [m]",
+    "serie": "SZLOO500",
+    "placa": "CRPH-84"
+  },
+  {
+    "codigo": "P-231003",
+    "fecha_adquisicion": "2011-11-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Motoniveladora John Deere 670 G / 3,6 [m]",
+    "marca": "John Deere",
+    "modelo": "670 G / 3,6 [m]",
+    "serie": "1DW670GXKBD641872",
+    "placa": "DYGH-12"
+  },
+  {
+    "codigo": "P-231004",
+    "fecha_adquisicion": "2012-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Motoniveladora John Deere 670 G / 3,6 [m]",
+    "marca": "John Deere",
+    "modelo": "671 G / 3,6 [m]",
+    "serie": "1DW670GXTBD638838",
+    "placa": "DLRD-50"
+  },
+  {
+    "codigo": "P-213001",
+    "fecha_adquisicion": "2011-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal Caterpillar 966H / 3,4 [m³]",
+    "marca": "Caterpillar ",
+    "modelo": "966H / 3,4 [m³]",
+    "serie": "A6D00540",
+    "placa": "WX-2520"
+  },
+  {
+    "codigo": "P-212002",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9027548"
+  },
+  {
+    "codigo": "P-212006",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9027549"
+  },
+  {
+    "codigo": "P-212007",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9027543"
+  },
+  {
+    "codigo": "P-212008",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9027545"
+  },
+  {
+    "codigo": "P-212009",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9027554"
+  },
+  {
+    "codigo": "P-212010",
+    "fecha_adquisicion": "2014-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9027551"
+  },
+  {
+    "codigo": "P-212011",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9027547"
+  },
+  {
+    "codigo": "P-212013",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9025319"
+  },
+  {
+    "codigo": "P-212014",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9027542"
+  },
+  {
+    "codigo": "P-212016",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9025317"
+  },
+  {
+    "codigo": "P-212018",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9025318"
+  },
+  {
+    "codigo": "P-212019",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9025630"
+  },
+  {
+    "codigo": "P-212020",
+    "fecha_adquisicion": "2014-05-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Cargador Frontal SDLG LG936L / 1,8 [m³]",
+    "marca": "SDLG ",
+    "modelo": " LG936L / 1,8 [m³]",
+    "serie": "VLG0936LHD9025632"
+  },
+  {
+    "codigo": "P-222001",
+    "fecha_adquisicion": "2011-07-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Bulldozer Caterpillar D6T / 21 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "D6T / 21 [ton]",
+    "serie": "SMC00234",
+    "placa": "BSVZ-55"
+  },
+  {
+    "codigo": "P-222002",
+    "fecha_adquisicion": "2011-08-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Bulldozer Caterpillar D6T XL DS / 23 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "D6T XL DS / 23 [ton]",
+    "serie": "GCT00793",
+    "placa": "DDKP-61"
+  },
+  {
+    "codigo": "P-223001",
+    "fecha_adquisicion": "2012-08-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Bulldozer Caterpillar D8T / 28 [ton]",
+    "marca": "Caterpillar ",
+    "modelo": "D8T / 28 [ton]",
+    "serie": "J8B03182",
+    "placa": "FCSB-36"
+  },
+  {
+    "codigo": "P-636001",
+    "fecha_adquisicion": "2015-09-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Skip Elevador de Aridos Tarsus / 3,1 [m³] a 40-45 [m³/h]",
+    "marca": "Tarsus",
+    "modelo": " 3,1 [m³] a 40-45 [m³/h]"
+  },
+  {
+    "codigo": "P-734001",
+    "fecha_adquisicion": "2020-01-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Robot Shotcrete Normet Alpha 20 / 20 [m³/h]",
+    "marca": "Normet",
+    "modelo": "Alpha 20 / 20 [m³/h]",
+    "serie": "EL955",
+    "num_motor": "12481772"
+  },
+  {
+    "codigo": "P-734002",
+    "fecha_adquisicion": "2020-03-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Robot Shotcrete Normet Alpha 20 / 20 [m³/h]",
+    "marca": "Normet",
+    "modelo": "Alpha 20 / 20 [m³/h]",
+    "serie": "EL956",
+    "num_motor": "12481771"
+  },
+  {
+    "codigo": "P-506001",
+    "fecha_adquisicion": "2020-02-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Manipulador Telescópico Rotatorio Manitou MRT-X 1440 / 14 [m]",
+    "marca": "Manitou",
+    "modelo": "MRT-X 1440 / 14 [m]",
+    "serie": "767841",
+    "num_motor": "U248047A",
+    "placa": "GYYL94-4"
+  },
+  {
+    "codigo": "P-506002",
+    "fecha_adquisicion": "2020-02-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Manipulador Telescópico Rotatorio Manitou MRT-X 1440 / 14 [m]",
+    "marca": "Manitou",
+    "modelo": "MRT-X 1440 / 14 [m]",
+    "serie": "767956",
+    "num_motor": "U252949A"
+  },
+  {
+    "codigo": "P-506003",
+    "fecha_adquisicion": "2020-06-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Manipulador Telescópico Rotatorio Manitou MRT 1840 / 18 [m]",
+    "marca": "Manitou",
+    "modelo": "MRT 1840 / 18 [m]",
+    "serie": "765302",
+    "num_motor": "U210090X",
+    "placa": "GYYR52-4"
+  },
+  {
+    "codigo": "P-586001",
+    "rubro": "MAQUINARIA",
+    "nombre": "Plataforma Aerea Telescópica Snorkel TM12 / 5,6 [m] 830 [kg]",
+    "marca": "Snorkel",
+    "modelo": "TM12 / 5,6 [m] 830 [kg]",
+    "serie": "53486"
+  },
+  {
+    "codigo": "P-586002",
+    "rubro": "MAQUINARIA",
+    "nombre": "Plataforma Aerea Telescópica Snorkel TM1230E / 5,6 [m] 830 [kg]",
+    "marca": "Snorkel",
+    "modelo": "TM1230E / 5,6 [m] 830 [kg]",
+    "serie": "54532"
+  },
+  {
+    "codigo": "M-355001",
+    "fecha_adquisicion": "2020-03-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Barredora Lavadora Industrial Fiorentini 65",
+    "marca": "Fiorentini ",
+    "modelo": "65",
+    "serie": "181200077"
+  },
+  {
+    "codigo": "M-415001",
+    "fecha_adquisicion": "2004-01-01",
+    "rubro": "ELEMENTOS DE TRANSPORTE",
+    "nombre": "Grua Horquilla Mitsubichi FG25K / 2,5 [ton]",
+    "marca": "Mitsubichi ",
+    "modelo": "FG25K / 2,5 [ton]",
+    "serie": "AF17B12978",
+    "placa": "XX-9287"
+  },
+  {
+    "codigo": "M-415002",
+    "fecha_adquisicion": "2017-12-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Carretillas Elevadoras hasta 2.000 kg.",
+    "marca": "Xilin",
+    "modelo": "CI-1535",
+    "serie": "L1708091"
+  },
+  {
+    "codigo": "M-415003",
+    "fecha_adquisicion": "2017-12-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Carretillas Elevadoras hasta 2.000 kg.",
+    "marca": "Xilin",
+    "modelo": "CI-1535",
+    "serie": "L1708093"
+  },
+  {
+    "codigo": "M-415004",
+    "fecha_adquisicion": "2020-08-01",
+    "rubro": "MAQUINARIA",
+    "nombre": "Grua Horquilla Fullen F220 / 2,0 [ton]",
+    "marca": "Fullen ",
+    "modelo": "F220 / 2,0 [ton]",
+    "serie": "AF02027",
+    "num_motor": "18173757"
+  },
+  {
+    "codigo": "M-621001",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 55 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 55 [kW]",
+    "serie": "TMG14URE0051"
+  },
+  {
+    "codigo": "M-621002",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 55 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 55 [kW]",
+    "serie": "TMG14URE0011"
+  },
+  {
+    "codigo": "M-621003",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 55 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 55 [kW]",
+    "serie": "TMG14URE0009"
+  },
+  {
+    "codigo": "M-621004",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 55 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 55 [kW]",
+    "serie": "TMG14URE0043"
+  },
+  {
+    "codigo": "M-621005",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 55 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 55 [kW]",
+    "serie": "TMG14URE0050"
+  },
+  {
+    "codigo": "M-621006",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 55 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 55 [kW]",
+    "serie": "TMG14URE0007"
+  },
+  {
+    "codigo": "M-621007",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 55 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 55 [kW]",
+    "serie": "TMG14URE0048"
+  },
+  {
+    "codigo": "M-621008",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 55 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 55 [kW]",
+    "serie": "TMG14URE0049"
+  },
+  {
+    "codigo": "M-621009",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 75 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 75 [kW]",
+    "serie": "TMG14URE0042"
+  },
+  {
+    "codigo": "M-621010",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 75 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 75 [kW]",
+    "serie": "TMG14URE0039"
+  },
+  {
+    "codigo": "M-621011",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 75 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 75 [kW]",
+    "serie": "TMG14URE0045"
+  },
+  {
+    "codigo": "M-621012",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 75 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 75 [kW]",
+    "serie": "TMG14URE0040"
+  },
+  {
+    "codigo": "M-621013",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 75 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 75 [kW]",
+    "serie": "TMG14URE0047"
+  },
+  {
+    "codigo": "M-621014",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 75 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 75 [kW]",
+    "serie": "TMG14URE0008"
+  },
+  {
+    "codigo": "M-621015",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 75 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 75 [kW]",
+    "serie": "TMG14URE0046"
+  },
+  {
+    "codigo": "M-621016",
+    "fecha_adquisicion": "2015-06-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 75 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 75 [kW]",
+    "serie": "TMG14URE0041"
+  },
+  {
+    "codigo": "M-621017",
+    "fecha_adquisicion": "2015-08-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 45 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 45 [kW]",
+    "serie": "TMG14URE0044"
+  },
+  {
+    "codigo": "M-621018",
+    "fecha_adquisicion": "2015-08-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 45 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 45 [kW]",
+    "serie": "TMG14URE0052"
+  },
+  {
+    "codigo": "M-621019",
+    "fecha_adquisicion": "2015-08-01",
+    "rubro": "MEDIOS AUXILIARES",
+    "nombre": "Ventiladores Centrifugos Atlas AHS125 / 45 [kW]",
+    "marca": "Atlas ",
+    "modelo": "AHS125 / 45 [kW]",
+    "serie": "TMG14URE0010"
+  }
+]

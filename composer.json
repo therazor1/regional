@@ -1,0 +1,47 @@
+{
+  "name": "wabir/dev",
+  "description": "",
+  "authors": [
+    {
+      "name": "Alvaro",
+      "email": "acs.lmv@gmail.com"
+    }
+  ],
+  "require": {
+    "phpoffice/phpspreadsheet": "^1.5",
+    "ext-json": "*",
+    "phpmailer/phpmailer": "^6.0",
+    "smarty/smarty": "^3.1",
+    "rakit/validation": "^1.0.0",
+    "mpdf/mpdf": "^8.0.10",
+    "gumlet/php-image-resize": "^1.9",
+    "twilio/sdk": "^6.21",
+    "ext-pdo": "*",
+    "ext-curl": "*",
+    "ext-mbstring": "*",
+    "ext-dom": "*",
+    "ext-libxml": "*",
+    "usmanhalalit/pixie": "2.0.2",
+    "google/cloud-dialogflow": "^0.19.1",
+    "phpseclib/phpseclib": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Inc\\": "inc/",
+      "Inc\\Bases\\": "inc/bases/",
+      "Inc\\validator_rules\\": "inc/validator_rules/",
+      "Inc\\utils\\": "inc/utils/",
+      "Inc\\database\\": "inc/database/",
+      "Inc\\installer\\": "inc/installer/",
+      "Libs\\": "libs/",
+      "Models\\": "models/",
+      "Models\\geo\\": "models/geo/",
+      "Controllers\\": "controllers/",
+      "Controllers\\admin\\": "controllers/admin/",
+      "Controllers\\api\\": "controllers/api/",
+      "Controllers\\proveedor\\": "controllers/proveedor/",
+      "Controllers\\test\\": "controllers/test/",
+      "Libs\\Pixie\\": "libs/Pixie/"
+    }
+  }
+}

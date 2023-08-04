@@ -1,0 +1,1 @@
+{"item->id_management":"33","Auth::id_management":"51","sql":"SELECT count(*) AS total FROM ots WHERE id_management = '33' AND date_created < '2021-12-29 18:03:16' LIMIT 1","qb":{"total":"0"},"total":"0"}

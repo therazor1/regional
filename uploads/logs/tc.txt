@@ -1,0 +1,1 @@
+{"service_order_currency":"Dolares","service_order_exchange":{"id":"5","id_tipo_moneda":"2","id_usuario":"9","monto":"3.8","last_error":"","fecha_creado":"2022-02-24 16:24:16"},"id_principal":2,"ultimo":{"id":"5","id_tipo_moneda":"2","id_usuario":"9","monto":"3.8","last_error":"","fecha_creado":"2022-02-24 16:24:16"}}
