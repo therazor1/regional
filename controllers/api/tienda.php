@@ -35,6 +35,33 @@ class tienda extends _controller{
 
     }
 
+    public function create_products(Req $req){
+
+        $data = $req->data([
+            'id_tienda' => 'required|num',
+            'nombre_producto' => 'required',
+            'puntos_requeridos' => 'required|num',
+            'puntos_obtenidos' => 'required|num'
+        ]);
+        
+        $myData['id_tienda'] = $data->id_tienda;
+        $myData['nombre_producto'] = $data->nombre_producto;
+        $myData['puntos_requeridos'] = $data->puntos_requeridos;
+        $myData['puntos_obtenidos'] = $data->puntos_obtenidos;
+
+        $qb = QB::table('tienda_productos');
+        $insert = $qb->insert($myData);
+
+        if($insert){
+            return Rsp::ok()
+                ->set('ok', "ok")
+                ->set('data', $myData);
+        }else{
+            return Rsp::e404();
+        }
+
+    }
+
 
 }
 
