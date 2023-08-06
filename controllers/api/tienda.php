@@ -12,52 +12,83 @@ class tienda extends _controller{
         parent::__construct(false);
     }
 
-    public function create(Req $req){
+    public function index(){
 
-        $data = $req->data([
-            'nombre' => 'required',
-            'slug' => 'required'
-        ]);
+        if($_SERVER['REQUEST_METHOD'] === 'GET') {
 
-        $myData['nombre'] = $data->nombre;
-        $myData['slug'] = $data->slug;
-
-        $qb = QB::table('tienda');
-        $insert = $qb->insert($myData);
-
-        if($insert){
+            $qb = QB::table('tienda');
+            $qb->select([
+                '*'
+            ]);
+            $data = $qb->get();
             return Rsp::ok()
-                ->set('ok', "ok")
-                ->set('data', $myData);
-        }else{
-            return Rsp::e404();
+                    ->set('tienda', $data);
+        }
+
+    }
+
+    public function create(Req $req){
+        if($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $data = $req->data([
+                'nombre' => 'required',
+                'slug' => 'required'
+            ]);
+    
+            $myData['nombre'] = $data->nombre;
+            $myData['slug'] = $data->slug;
+    
+            $qb = QB::table('tienda');
+            $insert = $qb->insert($myData);
+    
+            if($insert){
+                return Rsp::ok()
+                    ->set('ok', "ok")
+                    ->set('data', $myData);
+            }else{
+                return Rsp::e404();
+            }
         }
 
     }
 
     public function create_products(Req $req){
 
-        $data = $req->data([
-            'id_tienda' => 'required|num',
-            'nombre_producto' => 'required',
-            'puntos_requeridos' => 'required|num',
-            'puntos_obtenidos' => 'required|num'
-        ]);
-        
-        $myData['id_tienda'] = $data->id_tienda;
-        $myData['nombre_producto'] = $data->nombre_producto;
-        $myData['puntos_requeridos'] = $data->puntos_requeridos;
-        $myData['puntos_obtenidos'] = $data->puntos_obtenidos;
+        if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-        $qb = QB::table('tienda_productos');
-        $insert = $qb->insert($myData);
+            $data = $req->data([
+                'id_tienda' => 'required|num',
+                'nombre_producto' => 'required',
+                'puntos_requeridos' => 'required|num',
+                'puntos_obtenidos' => 'required|num'
+            ]);
+            
+            $myData['id_tienda'] = $data->id_tienda;
+            $myData['nombre_producto'] = $data->nombre_producto;
+            $myData['puntos_requeridos'] = $data->puntos_requeridos;
+            $myData['puntos_obtenidos'] = $data->puntos_obtenidos;
+    
+            $qb = QB::table('tienda_productos');
+            $insert = $qb->insert($myData);
+    
+            if($insert){
+                return Rsp::ok()
+                    ->set('ok', "ok")
+                    ->set('data', $myData);
+            }else{
+                return Rsp::e404();
+            }
 
-        if($insert){
-            return Rsp::ok()
-                ->set('ok', "ok")
-                ->set('data', $myData);
-        }else{
-            return Rsp::e404();
+        }
+
+    }
+
+
+    public function compras(){
+
+        if($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+
+
         }
 
     }
