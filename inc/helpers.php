@@ -364,3 +364,18 @@ function dateTextES($fecha) {
 function formatPorcDreams($value) {
     return round($value).'% ';
 }
+
+
+// Game Regional
+
+function validatePoints($pointsUser = 0, $pointsRequired = 0){
+    if($pointsUser >= $pointsRequired && ($pointsUser - $pointsRequired) >= 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function minusPoints($pointsUser = 0, $pointsRequired = 0){
+    return intval($pointsUser) - intval($pointsRequired);
+}

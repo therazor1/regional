@@ -24,7 +24,7 @@ class modulos extends _controller{
             $qb->select([
                 '*'
             ]);
-            
+
             if($data->slug != ""){
                 $tiendaId = QB::table('tienda');
                 $tiendaId->select(['id']);
