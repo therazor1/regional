@@ -82,6 +82,20 @@ class tienda extends _controller{
 
     }
 
+    public function inventario(Req $req){
+
+        if($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $data = $req->data([
+                'id_usuario' => 'required'
+            ]);
+
+            $inventario = QB::table('inventario')->select(['content'])->where('id_usuario', $data->id_usuario)->get()[0]->content;
+            $inventario = json_decode($inventario, true);
+            echo json_encode($inventario);
+        }
+
+    }
+
 
     public function compras(Req $req){
 
@@ -104,9 +118,36 @@ class tienda extends _controller{
                 return $rsp;
             }
 
+            // Get info 
+            $inf = self::getInfoUserInventary($data); 
+            $pointsUser = intval($inf->puntos_usuario);
+            $pointsRequired = intval($inf->puntos_requeridos);
+            
+            if(!validatePoints($pointsUser, $pointsRequired)){
+                return Rsp::ok()
+                        ->set('ok', false)
+                        ->set('msg', 'No tienes los suficientes puntos para adquirir este producto');
+            }
+
             // Get inventary
-            $inventario = QB::table('inventario')->select(['content'])->where('id_usuario', $data->id_usuario)->get()[0];
-            echo json_encode($inventario);
+            $inventario = QB::table('inventario')->select(['content'])->where('id_usuario', $data->id_usuario)->get()[0]->content;
+            $inventario = json_decode($inventario, true);
+
+
+            // Nuevo arreglo invetario
+            $newInventary = self::newInventary($data->id_usuario, $inventario, $inf);
+            $newInventary = json_encode($newInventary);
+
+            $rsp = QB::table('inventario')->where('id_usuario', $data->id_usuario)->update(['content' => $newInventary]);
+            
+
+            if($rsp){
+                return Rsp::ok()
+                        ->set('ok', true)
+                        ->set('msg', "Se agregó correctamente el producto a tu inventario");
+            }else{
+                return Rsp::e404();
+            }
 
         }
 
@@ -126,11 +167,13 @@ class tienda extends _controller{
         }
         // echo json_encode($inf);
         $inventary[$inf->modulo] = array(
-            'id_producto' => $inf->id_producto,
-            'nombre_producto' => $inf->nombre_producto,
-            'imagen' => $inf->imagen,
-            'puntos_obtenidos' => $inf->puntos_obtenidos,
-            'cantidad' => 1
+            $inf->id_producto => array(
+                'id_producto' => $inf->id_producto,
+                'nombre_producto' => $inf->nombre_producto,
+                'imagen' => $inf->imagen,
+                'puntos_obtenidos' => $inf->puntos_obtenidos,
+                'cantidad' => 1
+            )
         );
 
         $inventary = json_encode($inventary);
@@ -176,6 +219,38 @@ class tienda extends _controller{
         return $qb->get()[0];
     }
 
+    public function newInventary($idUser, $inventario, $inf){
+        $modulo = $inf->modulo;
+        // echo json_encode($inf);
+        if(array_key_exists($modulo, $inventario)){
+            if(array_key_exists($inf->id_producto, $inventario[$modulo])){
+                $inventario[$modulo][$inf->id_producto]['cantidad'] += 1;
+            }else{
+                $inventario[$inf->modulo][$inf->id_producto] = array(
+                    'id_producto' => $inf->id_producto,
+                    'nombre_producto' => $inf->nombre_producto,
+                    'imagen' => $inf->imagen,
+                    'puntos_obtenidos' => $inf->puntos_obtenidos,
+                    'cantidad' => 1
+                );
+            }
+        }else{
+            $inventario[$inf->modulo] = array(
+                $inf->id_producto => array(
+                    'id_producto' => $inf->id_producto,
+                    'nombre_producto' => $inf->nombre_producto,
+                    'imagen' => $inf->imagen,
+                    'puntos_obtenidos' => $inf->puntos_obtenidos,
+                    'cantidad' => 1
+                )
+            );
+        }
+
+        QB::table('usuarios')->where('id', $idUser)->update(['puntos' => minusPoints($inf->puntos_usuario, $inf->puntos_requeridos)]);
+
+        return $inventario;
+
+    }
 
 }
 
