@@ -43,8 +43,14 @@ class auth extends _controller{
  
             if($insert){
                 return Rsp::ok()
-                    ->set('ok', "ok")
-                    ->set('data', $myData);
+                    ->set('ok', true)
+                    ->set('id_user', $myData['id_user'])
+                    ->set('personaje', $myData['personaje'])
+                    ->set('genero', $myData['genero'])
+                    ->set('avatar', $myData['avatar'])
+                    ->set('age', $myData['age'])
+                    ->set('puntos', $myData['puntos'])
+                    ->set('barra_estado', $myData['barra_estado']);
             }else{
                 return Rsp::e404();
             }
