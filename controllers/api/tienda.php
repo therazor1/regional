@@ -5,6 +5,7 @@ namespace Controllers\api;
 use Libs\Pixie\QB;
 use Inc\Req;
 use Inc\Rsp;
+use Models\Inventario;
 
 class tienda extends _controller{
 
@@ -88,8 +89,8 @@ class tienda extends _controller{
             $data = $req->data([
                 'id_usuario' => 'required'
             ]);
-
-            $inventario = QB::table('inventario')->select(['content'])->where('id_usuario', $data->id_usuario)->get()[0]->content;
+            $inventario = new Inventario($data->id_usuario);
+            $inventario = $inventario->getInventary();
             $inventario = json_decode($inventario, true);
             echo json_encode($inventario);
         }

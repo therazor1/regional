@@ -379,3 +379,7 @@ function validatePoints($pointsUser = 0, $pointsRequired = 0){
 function minusPoints($pointsUser = 0, $pointsRequired = 0){
     return intval($pointsUser) - intval($pointsRequired);
 }
+
+function replaceText($buscar = [], $reemplazar = [], $mensaje = ""){
+    return str_replace($buscar, $reemplazar, $mensaje);
+}
