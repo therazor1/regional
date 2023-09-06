@@ -2,10 +2,12 @@
 
 namespace Controllers\api;
 
+use Google\Cloud\Dialogflow\V2\Agent\Tier;
 use Libs\Pixie\QB;
 use Inc\Req;
 use Inc\Rsp;
 use Models\Inventario;
+use Models\Registro;
 use Models\Tienda;
 use Models\Usuario;
 
@@ -70,6 +72,9 @@ class utilizar extends _controller{
         // Instancia de Usuario
         $usuario = new Usuario($data->id_usuario);
 
+        // Instancia Registro
+        $registro = new Registro($data->id_usuario);
+
         // Obtener Puntos
         $puntos = $usuario->getPoints();
 
@@ -81,16 +86,26 @@ class utilizar extends _controller{
 
         $slug = "";
         $mensaje = "";
+        $estado = "";
         if($data->modulo == "alimentacion"){
             $slug = Tienda::ALIMENTACION;
             $mensaje = Tienda::msjAlimentacion();
+            $estado = "estado_alimentacion";
         }else if ($data->modulo == "salud"){
             $slug = Tienda::SALUD;
+            $estado = "estado_salud";
+        }else if($data->modulo == "descanso"){
+            $slug = Tienda::DESCANSO;
+            $estado = "estado_descanso";
+        }else if($data->modulo == "minijuegos"){
+            $slug = Tienda::MINIJUEGOS;
+            $estado = "estado_game";
         }
         if(intval($inventario[$slug][$data->id_producto]['cantidad']) > 0){
             $nombre_producto = $inventario[$slug][$data->id_producto]['nombre_producto'];
             $inventario[$slug][$data->id_producto]['cantidad'] = intval($inventario[$slug][$data->id_producto]['cantidad']) - 1;
-    
+            $energia = $inventario[$slug][$data->id_producto]['energia'];
+
             $puntos += intval($inventario[$slug][$data->id_producto]['puntos_obtenidos']);
             $msjPuntos = strval($inventario[$slug][$data->id_producto]['puntos_obtenidos']);
 
@@ -100,7 +115,13 @@ class utilizar extends _controller{
 
             // Actualizar Puntos Usuario
             $usuario->updatePoints($puntos);
+
+            // Actualizar Energia Usuario
+            $usuario->updateEstadoUser($energia, $estado);
             
+            // Actualizar Energia Registro
+            $registro->updateEstadoRegistro($energia, $estado);
+
             // Actualizar Inventario
             $inventario = json_encode($inventario);
             $Inventary->updateInventary($inventario);

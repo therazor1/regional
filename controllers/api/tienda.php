@@ -60,13 +60,15 @@ class tienda extends _controller{
                 'id_tienda' => 'required|num',
                 'nombre_producto' => 'required',
                 'puntos_requeridos' => 'required|num',
-                'puntos_obtenidos' => 'required|num'
+                'puntos_obtenidos' => 'required|num',
+                'energia' => 'required|num',
             ]);
             
             $myData['id_tienda'] = $data->id_tienda;
             $myData['nombre_producto'] = $data->nombre_producto;
             $myData['puntos_requeridos'] = $data->puntos_requeridos;
             $myData['puntos_obtenidos'] = $data->puntos_obtenidos;
+            $myData['energia'] = $data->energia;
     
             $qb = QB::table('tienda_productos');
             $insert = $qb->insert($myData);
@@ -166,13 +168,14 @@ class tienda extends _controller{
                     ->set('ok', false)
                     ->set('msg', 'No tienes los suficientes puntos para adquirir este producto');
         }
-        // echo json_encode($inf);
+
         $inventary[$inf->modulo] = array(
             $inf->id_producto => array(
                 'id_producto' => $inf->id_producto,
                 'nombre_producto' => $inf->nombre_producto,
                 'imagen' => $inf->imagen,
                 'puntos_obtenidos' => $inf->puntos_obtenidos,
+                'energia' => $inf->energia,
                 'cantidad' => 1
             )
         );
@@ -212,7 +215,8 @@ class tienda extends _controller{
             'tp.imagen',
             'tp.puntos_requeridos',
             'tp.puntos_obtenidos',
-            'us.puntos puntos_usuario'
+            'us.puntos puntos_usuario',
+            'tp.energia'
         ]);
         $qb->leftJoin('usuarios us', 'us.id', '=', $data->id_usuario);
         $qb->leftJoin('tienda t', 't.id', '=', 'tp.id_tienda');

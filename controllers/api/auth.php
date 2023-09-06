@@ -37,6 +37,11 @@ class auth extends _controller{
             $myData['age'] = 1;
             $myData['puntos'] = Puntos::INITIAL;
             $myData['barra_estado'] = 50;
+            $myData['estado_alimentacion'] = 50;
+            $myData['estado_salud'] = 50;
+            $myData['estado_descanso'] = 50;
+            $myData['estado_game'] = 50;
+            $myData['nivel'] = 1;
             
             $insert = QB::table('usuarios');
             $insert = $insert->insert($myData);
@@ -44,13 +49,7 @@ class auth extends _controller{
             if($insert){
                 return Rsp::ok()
                     ->set('ok', true)
-                    ->set('id_user', $myData['id_user'])
-                    ->set('personaje', $myData['personaje'])
-                    ->set('genero', $myData['genero'])
-                    ->set('avatar', $myData['avatar'])
-                    ->set('age', $myData['age'])
-                    ->set('puntos', $myData['puntos'])
-                    ->set('barra_estado', $myData['barra_estado']);
+                    ->set('user', $myData);
             }else{
                 return Rsp::e404();
             }
