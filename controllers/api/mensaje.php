@@ -15,7 +15,6 @@ class mensaje extends _controller {
         $data = $req->data([
             'modulo'                  => 'num|required',
             'mensaje_accion'          => 'required',
-            'energia'                 => 'required|num',
             'frecuencia'              => 'required',
             'cantidad_mensaje'        => 'required',
             'productos_seleccionados' => 'required',
@@ -26,7 +25,6 @@ class mensaje extends _controller {
         $myData = [];
         $myData['modulo'] = $data->modulo;
         $myData['mensaje_accion'] = $data->mensaje_accion;
-        $myData['energia'] = $data->energia;
         $myData['frecuencia'] = $data->frecuencia;
         $myData['cantidad_mensaje'] = $data->cantidad_mensaje;
         $myData['productos_seleccionados'] = $data->productos_seleccionados;
