@@ -9,6 +9,7 @@ use Inc\Rsp;
 use Models\Genero;
 use Models\Puntos;
 use Models\Personajes;
+use Models\Usuario;
 
 class auth extends _controller{
 
@@ -72,6 +73,9 @@ class auth extends _controller{
             $verify->select(['*']);
             $verify->where('id_user', $data->id_user);
             $rsp = $verify->get();
+
+            $color = Usuario::getStatusColor($rsp[0]->barra_estado);
+            $rsp[0]->color = $color;
 
             if($rsp !== []){
                 return Rsp::ok()

@@ -21,6 +21,11 @@ class Usuario extends BaseModel{
     public $estado_descanso;
     public $estado_game;
     public $nivel;
+    public $color;
+
+    const COLOR_ROJO = "#FF0000";
+    const COLOR_AMARILLO = "#FFFF00";
+    const COLOR_AZUL = "#0000FF";
 
 
     public function __construct($id) {
@@ -88,7 +93,9 @@ class Usuario extends BaseModel{
         }
     }
 
-
+    public static function getStatusColor($barra_estado){
+        return ($barra_estado <= 50) ? self::COLOR_ROJO : (($barra_estado <= 75) ? self::COLOR_AMARILLO : self::COLOR_AZUL);
+    }
 
 }
 
