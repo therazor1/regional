@@ -94,7 +94,10 @@ class tienda extends _controller{
             $inventario = new Inventario($data->id_usuario);
             $inventario = $inventario->getInventary();
             $inventario = json_decode($inventario, true);
-            echo json_encode($inventario);
+
+            return Rsp::ok()
+                    ->set('inventario', $inventario);
+
         }
 
     }
