@@ -3,48 +3,28 @@
 use Inc\Bases\BaseModel;
 use Libs\Pixie\QB;
 
-class Memoria extends BaseModel{
+class Obstaculo extends BaseModel{
 
 
     const NIVEL_1 = 1;
-    const POINTS_1 = 12;
-    const LOST_1 = 5;
+    const POINTS_1 = 30;
+    const LOST_1 = 20;
 
     const NIVEL_2 = 2;
-    const POINTS_2 = 18;
-    const LOST_2 = 10;
+    const POINTS_2 = 42;
+    const LOST_2 = 30;
 
     const NIVEL_3 = 3;
-    const POINTS_3 = 24;
-    const LOST_3 = 15;
+    const POINTS_3 = 54;
+    const LOST_3 = 40;
 
     const NIVEL_4 = 4;
-    const POINTS_4 = 30;
-    const LOST_4 = 20;
+    const POINTS_4 = 66;
+    const LOST_4 = 50;
 
     const NIVEL_5 = 5;
-    const POINTS_5 = 36;
-    const LOST_5 = 25;
-    
-    const NIVEL_6 = 6;
-    const POINTS_6 = 42;
-    const LOST_6 = 30;
-
-    const NIVEL_7 = 7;
-    const POINTS_7 = 48;
-    const LOST_7 = 35;
-
-    const NIVEL_8 = 8;
-    const POINTS_8 = 54;
-    const LOST_8 = 40;
-
-    const NIVEL_9 = 9;
-    const POINTS_9 = 60;
-    const LOST_9 = 45;
-
-    const NIVEL_10 = 10;
-    const POINTS_10 = 72;
-    const LOST_10 = 50;
+    const POINTS_5 = 84;
+    const LOST_5 = 60;
 
 
     public $id_user;
@@ -57,9 +37,9 @@ class Memoria extends BaseModel{
     }
 
     public function instancia(){
-        $info = QB::table('memoria')->select(['*'])->where('id_user', $this->id_user)->get()[0];
+        $info = QB::table('obstaculo')->select(['*'])->where('id_user', $this->id_user)->get()[0];
         if(!$info->id_user){
-            QB::table('memoria')->insert(['id_user' => $this->id_user, 'nivel' => self::NIVEL_1]);
+            QB::table('obstaculo')->insert(['id_user' => $this->id_user, 'nivel' => self::NIVEL_1]);
             self::get_puntos(self::NIVEL_1);
             self::updateLevel(self::NIVEL_1);
             return $this->state = true;
@@ -84,7 +64,7 @@ class Memoria extends BaseModel{
         if($nivel == 10){
             $nivel = 0;
         }
-        return QB::table('memoria')
+        return QB::table('obstaculo')
             ->where('id_user', $this->id_user)
             ->update(['nivel' => intval($nivel)+1]);
     }

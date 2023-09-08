@@ -59,8 +59,12 @@ class Usuario extends BaseModel{
             ->update(['puntos' => $puntos]);
     }
 
-    public function updateEstadoUser($porcentaje, $estado){
-        $this->{$estado} += $porcentaje;
+    public function updateEstadoUser($porcentaje, $estado, $percent = false){
+        
+        if(!$percent){
+            $this->{$estado} += $porcentaje;
+        }
+        $this->{$estado} = ($this->{$estado} - ($this->{$estado} * ($porcentaje / 100)));
         self::mediaEstado();
         return QB::table('usuarios')
                 ->where('id', $this->id)
