@@ -74,10 +74,10 @@ class auth extends _controller{
             $verify->where('id_user', $data->id_user);
             $rsp = $verify->get();
 
+            $color = Usuario::getStatusColor($rsp[0]->barra_estado);
+            $rsp[0]->color = $color;
 
             if($rsp !== []){
-                $color = Usuario::getStatusColor($rsp[0]->barra_estado);
-                $rsp[0]->color = $color;
                 return Rsp::ok()
                         ->set('ok', 'ok')
                         ->set('existe', true)
