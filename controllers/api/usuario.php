@@ -15,8 +15,8 @@ class usuario extends _controller{
 
     public function getMessage(){
 
-        // $hora = date("H");
-        $hora = '14';
+        $hora = date("H");
+        // $hora = '14';
         $dia = date('l');
         $dia = Dias::getDay($dia);
 
