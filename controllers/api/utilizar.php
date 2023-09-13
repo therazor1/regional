@@ -122,12 +122,12 @@ class utilizar extends _controller{
             // Actualizar Energia Registro
             $registro->updateEstadoRegistro($energia, $estado);
 
-            // Actualizar Inventario
-            $inventario = json_encode($inventario);
+            // // Actualizar Inventario
+            // $inventario = json_encode($inventario);
             $Inventary->updateInventary($inventario);
 
             
-            // Reemplzar texto
+            // // Reemplzar texto
             $mensaje = str_replace(["XXX", "YYY"], [$nombre_producto, $msjPuntos], $mensaje);
             return Rsp::ok()
                     ->set('ok', true)

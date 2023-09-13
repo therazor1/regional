@@ -239,6 +239,7 @@ class tienda extends _controller{
                     'nombre_producto' => $inf->nombre_producto,
                     'imagen' => $inf->imagen,
                     'puntos_obtenidos' => $inf->puntos_obtenidos,
+                    'energia' => $inf->energia,
                     'cantidad' => 1
                 );
             }
@@ -249,6 +250,7 @@ class tienda extends _controller{
                     'nombre_producto' => $inf->nombre_producto,
                     'imagen' => $inf->imagen,
                     'puntos_obtenidos' => $inf->puntos_obtenidos,
+                    'energia' => $inf->energia,
                     'cantidad' => 1
                 )
             );
