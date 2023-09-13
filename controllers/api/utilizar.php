@@ -2,6 +2,7 @@
 
 namespace Controllers\api;
 
+use Controllers\api\usuario as ApiUsuario;
 use Google\Cloud\Dialogflow\V2\Agent\Tier;
 use Libs\Pixie\QB;
 use Inc\Req;
@@ -64,6 +65,13 @@ class utilizar extends _controller{
 
 
     public function use(Req $req){
+
+        $messageNow = ApiUsuario::getMessage();
+        $seleccionados = [];
+        if($messageNow !== null){
+            $seleccionados = explode("-",$messageNow->productos_seleccionados);
+        }
+
         $data = $req->data([
             'modulo' => 'required',
             'id_usuario' => 'required',
@@ -101,6 +109,13 @@ class utilizar extends _controller{
             $slug = Tienda::MINIJUEGOS;
             $estado = "estado_game";
         }
+
+        if(!in_array($data->id_producto, $seleccionados)){
+            return Rsp::ok()
+                ->set('ok', false)
+                ->set('msg', "No puede realizar esta accion other product");
+        }
+
         if(intval($inventario[$slug][$data->id_producto]['cantidad']) > 0){
             $nombre_producto = $inventario[$slug][$data->id_producto]['nombre_producto'];
             $inventario[$slug][$data->id_producto]['cantidad'] = intval($inventario[$slug][$data->id_producto]['cantidad']) - 1;
@@ -123,19 +138,19 @@ class utilizar extends _controller{
             $registro->updateEstadoRegistro($energia, $estado);
 
             // // Actualizar Inventario
-            // $inventario = json_encode($inventario);
+            $inventario = json_encode($inventario);
             $Inventary->updateInventary($inventario);
-
-            
             // // Reemplzar texto
-            $mensaje = str_replace(["XXX", "YYY"], [$nombre_producto, $msjPuntos], $mensaje);
+            $mensaje = str_replace(["AVATAR", "PUNTOS"], [$usuario->avatar, $msjPuntos], $messageNow->retroalimentacion);
+
             return Rsp::ok()
                     ->set('ok', true)
                     ->set('msg', $mensaje);
         }else{
             return Rsp::ok()
-                   ->set('ok', false)
-                   ->set('msg', "No puede realizar esta accion");
+                    ->set('ok', false)
+                    ->set('msg', "No puede realizar esta accion");
+            
         }
         
 
