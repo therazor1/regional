@@ -35,6 +35,7 @@ class Inventario extends BaseModel{
 
 
     public function updateInventary($inventary = ""){
+        $inventary = json_encode($inventary);
         return QB::table('inventario')
             ->where('id_usuario', $this->id_usuario)
             ->update(['content' => $inventary]);
