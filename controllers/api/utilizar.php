@@ -34,6 +34,10 @@ class utilizar extends _controller{
             $slug = "Alimentación";
         }else if ($data->modulo == "salud"){
             $slug = "Salud y aseo";
+        }else if($data->modulo == "descanso"){
+            $slug = "Descanso";
+        }else if($data->modulo == 'minijuegos'){
+            $slug = "Minijuegos";
         }
         
         $productos = QB::table('tienda_productos tp');
