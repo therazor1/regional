@@ -139,7 +139,6 @@ class tienda extends _controller{
             $inventario = QB::table('inventario')->select(['content'])->where('id_usuario', $data->id_usuario)->get()[0]->content;
             $inventario = json_decode($inventario, true);
 
-
             // Nuevo arreglo invetario
             $newInventary = self::newInventary($data->id_usuario, $inventario, $inf);
             $newInventary = json_encode($newInventary);
@@ -229,7 +228,7 @@ class tienda extends _controller{
 
     public function newInventary($idUser, $inventario, $inf){
         $modulo = $inf->modulo;
-        // echo json_encode($inf);
+
         if(array_key_exists($modulo, $inventario)){
             if(array_key_exists($inf->id_producto, $inventario[$modulo])){
                 $inventario[$modulo][$inf->id_producto]['cantidad'] += 1;

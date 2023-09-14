@@ -138,7 +138,6 @@ class utilizar extends _controller{
             $registro->updateEstadoRegistro($energia, $estado);
 
             // // Actualizar Inventario
-            $inventario = json_encode($inventario);
             $Inventary->updateInventary($inventario);
             // // Reemplzar texto
             $mensaje = str_replace(["AVATAR", "PUNTOS"], [$usuario->avatar, $msjPuntos], $messageNow->retroalimentacion);
