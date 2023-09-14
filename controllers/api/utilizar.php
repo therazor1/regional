@@ -39,7 +39,10 @@ class utilizar extends _controller{
         $productos = QB::table('tienda_productos tp');
         $productos->select([
             'tp.id',
-            'tp.nombre_producto'
+            'tp.nombre_producto',
+            'tp.imagen',
+            'tp.puntos_obtenidos',
+            'tp.referencias'
         ]);
         $productos->leftJoin('tienda t', 't.id', "=", "tp.id_tienda");
         $productos->where('t.nombre', $slug);
