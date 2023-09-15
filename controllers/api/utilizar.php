@@ -46,7 +46,8 @@ class utilizar extends _controller{
             'tp.nombre_producto',
             'tp.imagen',
             'tp.puntos_obtenidos',
-            'tp.referencias'
+            'tp.referencias',
+            'tp.puntos_requeridos',
         ]);
         $productos->leftJoin('tienda t', 't.id', "=", "tp.id_tienda");
         $productos->where('t.nombre', $slug);
@@ -63,7 +64,12 @@ class utilizar extends _controller{
                 }else{
                     $producto->mostrar = 0;
                 }
+
+                if($producto->puntos_requeridos == 0){
+                    $producto->mostrar = 1;
+                }
             }
+            unset($producto->puntos_requeridos);
         }
         return Rsp::ok()
                 ->set('ok', true)
