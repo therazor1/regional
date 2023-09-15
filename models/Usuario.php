@@ -71,6 +71,15 @@ class Usuario extends BaseModel{
         }
         $this->{$estado} = ($this->{$estado} - ($this->{$estado} * ($porcentaje / 100)));
         self::mediaEstado();
+
+        QB::table('registro')
+            ->where('id_user', $this->id)
+            ->where('fecha', getToday())
+            ->update([
+                'barra_estado' => $this->barra_estado,
+                "$estado" => $this->{$estado},
+            ]);
+
         return QB::table('usuarios')
                 ->where('id', $this->id)
                 ->update([
@@ -95,6 +104,22 @@ class Usuario extends BaseModel{
 
     public static function getStatusColor($barra_estado){
         return ($barra_estado <= 50) ? self::COLOR_ROJO : (($barra_estado <= 75) ? self::COLOR_AMARILLO : self::COLOR_AZUL);
+    }
+
+    public function getActionDiar(){
+        $qb = QB::table('registro')->select(['accion_diaria'])->where('id_user', $this->id)->where('fecha', getToday())->get()[0];
+        $accion = json_decode($qb->accion_diaria, true);
+        return $accion;
+    }
+
+    public function updateActionDiar($action){
+        $action = json_encode($action);
+        return QB::table('registro')
+                ->where('id_user', $this->id)
+                ->where('fecha', getToday())
+                ->update([
+                    'accion_diaria' => $action
+                ]);
     }
 
 }

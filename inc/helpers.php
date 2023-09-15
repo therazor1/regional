@@ -383,3 +383,7 @@ function minusPoints($pointsUser = 0, $pointsRequired = 0){
 function replaceText($buscar = [], $reemplazar = [], $mensaje = ""){
     return str_replace($buscar, $reemplazar, $mensaje);
 }
+
+function getToday(){
+    return date('Y-m-d');
+}

@@ -73,12 +73,13 @@ class utilizar extends _controller{
 
     public function use(Req $req){
 
-        $messageNow = ApiUsuario::getMessage();
+        
+        $messageNow = ApiUsuario::getMessageStatic();
         $seleccionados = [];
         if($messageNow !== null){
             $seleccionados = explode("-",$messageNow->productos_seleccionados);
         }
-
+        $id_mensaje = $messageNow->id_mensaje;
         $data = $req->data([
             'modulo' => 'required',
             'id_usuario' => 'required',
@@ -98,6 +99,8 @@ class utilizar extends _controller{
         $inventario = $Inventary->getInventary();
         $inventario = json_decode($inventario, true);
 
+        // Obtener acciones diaria
+        $accion = $usuario->getActionDiar();
 
         $slug = "";
         $mensaje = "";
@@ -115,6 +118,12 @@ class utilizar extends _controller{
         }else if($data->modulo == "minijuegos"){
             $slug = Tienda::MINIJUEGOS;
             $estado = "estado_game";
+        }
+
+        if($accion[$id_mensaje]['status'] == 1){
+            return Rsp::ok()
+                ->set('ok', false)
+                ->set('msg', "Ya realizó esta acción diaria");
         }
 
         if(!in_array($data->id_producto, $seleccionados)){
@@ -135,18 +144,21 @@ class utilizar extends _controller{
                 unset($inventario[$slug][$data->id_producto]);
             }
 
+            // Actualizar status de accion diaria
+            $accion[$id_mensaje]['status'] = 1;
+            $usuario->updateActionDiar($accion);
+
             // Actualizar Puntos Usuario
             $usuario->updatePoints($puntos);
 
             // Actualizar Energia Usuario
             $usuario->updateEstadoUser($energia, $estado);
             
-            // Actualizar Energia Registro
-            $registro->updateEstadoRegistro($energia, $estado);
 
-            // // Actualizar Inventario
+            // Actualizar Inventario
             $Inventary->updateInventary($inventario);
-            // // Reemplzar texto
+
+            // Reemplzar texto
             $mensaje = str_replace(["AVATAR", "PUNTOS"], [$usuario->avatar, $msjPuntos], $messageNow->retroalimentacion);
 
             return Rsp::ok()

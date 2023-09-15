@@ -48,13 +48,17 @@ class Registro extends BaseModel{
     public function updateEstadoRegistro($porcentaje, $estado){
         $this->{$estado} += $porcentaje;
         self::mediaEstado();
+        echo json_encode($this->barra_estado)."<br>";
+        echo json_encode($this->{$estado});
+        exit;
         return QB::table('registro')
-                ->where('id_user', $this->id_user)
-                ->where('fecha', $this->fecha)
+                ->where('id_user', $this->id)
+                ->where('fecha', getToday())
                 ->update([
                     'barra_estado' => $this->barra_estado,
                     "$estado" => $this->{$estado}
                 ]);
+                
     }
 
     public function mediaEstado(){

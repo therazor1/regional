@@ -13,8 +13,48 @@ class usuario extends _controller{
     }
 
 
-    public static function getMessage(){
+    public static function getMessage(Req $req){
 
+        $data = $req->data([
+            'id_user' => 'required|num'
+        ]);
+
+        // ID Acciones Completadas
+        $acciones = QB::table('registro')->select(['accion_diaria'])->where('id_user', $data->id_user)->where('fecha', getToday())->get()[0]->accion_diaria;
+        $acciones = json_decode($acciones, true);
+        $hora = date("H");
+        // $hora = '14';
+        $dia = date('l');
+        $dia = Dias::getDay($dia);
+
+        $qb = QB::query("SELECT acciones_semanales.hora, mensajes.mensaje_accion, mensajes.productos_seleccionados, mensajes.retroalimentacion, mensajes.id as id_mensaje FROM acciones_semanales
+            LEFT JOIN mensajes ON mensajes.id = acciones_semanales.id_mensaje
+            WHERE acciones_semanales.id_dia = $dia
+            AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
+        ")->get()[0];
+
+        $verificar = [];
+
+        foreach($acciones as $accion){
+            if($accion['id_mensaje'] == $qb->id_mensaje){
+                if($accion['status'] != 1){
+                    array_push($verificar, $accion['id_mensaje']);
+                }else{
+                    array_push($verificar, 0);
+                }
+            }
+        }
+
+        if($verificar[0] == $qb->id_mensaje){
+            return $qb;
+        }
+            
+        return [];
+        
+
+    }
+
+    public static function getMessageStatic(){
         $hora = date("H");
         // $hora = '14';
         $dia = date('l');
@@ -26,7 +66,6 @@ class usuario extends _controller{
             AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
         ")->get()[0];
         return $qb;
-
     }
 
     public static function getActionsDiary(){
