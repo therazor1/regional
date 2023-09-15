@@ -107,8 +107,8 @@ class usuario extends _controller{
 
         $qb = QB::table('dormir')
               ->where('id_user', $data->id_user)
-              ->where('fecha', minusOneDay())
-              ->get()[0];
+              ->limit(2)
+              ->get();
 
         return Rsp::ok()
                 ->set('ok', true)
