@@ -78,5 +78,44 @@ class usuario extends _controller{
         return $qb;
     }
 
+    public static function dormir(Req $req){
+
+        $data = $req->data([
+            'id_user' => 'required|num',
+            'dormir' => 'required'
+        ]);
+
+
+        QB::table('dormir')
+            ->insert([
+                'id_user' => $data->id_user,
+                'dormir' => $data->dormir,
+                'date_created' => getTodayHours(),
+                'fecha' => getToday()
+            ]);
+        
+        return Rsp::ok()
+                ->set('ok', true);
+
+    }
+
+    public static function getDormir(Req $req){
+
+        $data = $req->data([
+            'id_user' => 'required|num'
+        ]);
+
+        $qb = QB::table('dormir')
+              ->where('id_user', $data->id_user)
+              ->where('fecha', minusOneDay())
+              ->get()[0];
+
+        return Rsp::ok()
+                ->set('ok', true)
+                ->set('msg', "Información de un día anterior")
+                ->set('data', $qb);
+
+    }
+
 
 }

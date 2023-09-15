@@ -387,3 +387,15 @@ function replaceText($buscar = [], $reemplazar = [], $mensaje = ""){
 function getToday(){
     return date('Y-m-d');
 }
+
+function getTodayHours(){
+    return date('Y-m-d H:i:s');
+}
+
+function minusOneDay(){
+    // Obtener la fecha actual
+    $fechaActual = date('Y-m-d');
+
+    // Restar un día a la fecha actual
+    return date('Y-m-d', strtotime($fechaActual . ' -1 day'));
+}
