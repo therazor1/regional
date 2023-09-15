@@ -29,5 +29,15 @@ class usuario extends _controller{
 
     }
 
+    public static function getActionsDiary(){
+        $dia = date('l');
+        $dia = Dias::getDay($dia);
+        $qb = QB::query("SELECT acciones_semanales.hora, mensajes.mensaje_accion, mensajes.productos_seleccionados, mensajes.retroalimentacion, mensajes.id as id_mensaje FROM acciones_semanales
+            LEFT JOIN mensajes ON mensajes.id = acciones_semanales.id_mensaje
+            WHERE acciones_semanales.id_dia = $dia
+        ")->get();
+        return $qb;
+    }
+
 
 }
