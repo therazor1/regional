@@ -107,6 +107,7 @@ class usuario extends _controller{
 
         $qb = QB::table('dormir')
               ->where('id_user', $data->id_user)
+              ->orderBy('id',"DESC")
               ->limit(2)
               ->get();
 
