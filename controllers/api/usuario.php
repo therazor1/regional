@@ -33,6 +33,12 @@ class usuario extends _controller{
             AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
         ")->get()[0];
 
+        if($qb == null){
+            return Rsp::ok()
+                    ->set('ok', false)
+                    ->set('rsp', []);
+        }
+
         $verificar = [];
 
         foreach($acciones as $accion){
@@ -49,7 +55,6 @@ class usuario extends _controller{
             return $qb;
         }
             
-        return [];
         
 
     }
@@ -65,7 +70,44 @@ class usuario extends _controller{
             WHERE acciones_semanales.id_dia = $dia
             AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
         ")->get()[0];
-        return $qb;
+
+        return Rsp::ok()
+                ->set('rsp', $qb);
+
+    }
+
+    public function getMessageByModulo(Req $req){
+        $data = $req->data([
+            'id_user' => 'required|num',
+            'modulo' => 'required'
+        ]);
+
+        $modulo = $data->modulo;
+
+        // ID Acciones Completadas
+        $acciones = QB::table('registro')->select(['accion_diaria'])->where('id_user', $data->id_user)->where('fecha', getToday())->get()[0]->accion_diaria;
+        $acciones = json_decode($acciones, true);
+        $hora = date("H");
+        // $hora = '14';
+        $dia = date('l');
+        $dia = Dias::getDay($dia);
+
+        $qb = QB::query("SELECT acciones_semanales.hora, mensajes.mensaje_accion, mensajes.productos_seleccionados, mensajes.retroalimentacion, mensajes.id as id_mensaje, tienda.slug as modulo FROM acciones_semanales
+            LEFT JOIN mensajes ON mensajes.id = acciones_semanales.id_mensaje
+            LEFT JOIN tienda ON tienda.id = mensajes.modulo
+            WHERE acciones_semanales.id_dia = $dia
+            AND tienda.slug = '$modulo'
+            AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
+        ")->get();
+        if($qb == []){
+            return Rsp::ok()
+                ->set('ok', false)
+                ->set('rsp', []);
+        }
+        return Rsp::ok()
+            ->set('ok', true)
+            ->set('rsp', $qb[0]);
+        
     }
 
     public static function getActionsDiary(){

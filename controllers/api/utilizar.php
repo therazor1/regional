@@ -79,7 +79,7 @@ class utilizar extends _controller{
             unset($producto->puntos_requeridos);
         }
         return Rsp::ok()
-                ->set('ok', true)
+                ->set('ok', $productos !== [] ? true : false)
                 ->set('productos' , $productos);
     }
 
