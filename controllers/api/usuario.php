@@ -101,7 +101,7 @@ class usuario extends _controller{
         ")->get();
         if($qb == []){
             return Rsp::ok()
-                ->set('ok', false)
+                ->set('ok', true)
                 ->set('rsp', []);
         }
         return Rsp::ok()
