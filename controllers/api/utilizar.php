@@ -53,6 +53,25 @@ class utilizar extends _controller{
         $productos->where('t.nombre', $slug);
         $productos = $productos->get();
 
+        if($inventario == null){
+            $product = QB::table('tienda_productos tp');
+            $product->select([
+                'tp.id',
+                'tp.nombre_producto',
+                'tp.imagen',
+                'tp.puntos_obtenidos',
+                'tp.referencias',
+                'tp.puntos_requeridos'
+            ]);
+            $product->leftJoin('tienda t', 't.id', "=", "tp.id_tienda");
+            $product->where('t.nombre', $slug);
+            $product->where('tp.puntos_requeridos', '=', '0');
+            $product = $product->get();
+            return Rsp::ok()
+                ->set('ok', true)
+                ->set('productos' , $product);
+        }
+
         $keys = array_keys($inventario[$slug]);
         foreach ($productos as $producto) {
             if($keys == null){
