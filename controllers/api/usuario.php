@@ -71,8 +71,7 @@ class usuario extends _controller{
             AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
         ")->get()[0];
 
-        return Rsp::ok()
-                ->set('rsp', $qb);
+        return $qb;
 
     }
 
