@@ -31,7 +31,12 @@ class usuario extends _controller{
             LEFT JOIN mensajes ON mensajes.id = acciones_semanales.id_mensaje
             WHERE acciones_semanales.id_dia = $dia
             AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
-        ")->get()[0];
+        ")->get();
+        
+        $keys = [];
+        foreach($qb as $ke){
+            array_push($keys, $ke->id_mensaje);
+        }
 
         if($qb == null){
             return Rsp::ok()
@@ -40,22 +45,24 @@ class usuario extends _controller{
         }
 
         $verificar = [];
-
+       
         foreach($acciones as $accion){
-            if($accion['id_mensaje'] == $qb->id_mensaje){
+            if(in_array($accion['id_mensaje'], $keys)){
                 if($accion['status'] != 1){
                     array_push($verificar, $accion['id_mensaje']);
-                }else{
-                    array_push($verificar, 0);
                 }
             }
         }
 
-        if($verificar[0] == $qb->id_mensaje){
-            return $qb;
+        $arr = [];
+        foreach($qb as $ke){
+            if(in_array($ke->id_mensaje, $verificar)){
+                array_push($arr, $ke);
+            }
         }
-            
-        
+        return Rsp::ok()
+            ->set('ok', true)
+            ->set('rsp', $arr);
 
     }
 
@@ -98,14 +105,36 @@ class usuario extends _controller{
             AND tienda.slug = '$modulo'
             AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
         ")->get();
-        if($qb == []){
+        $keys = [];
+        foreach($qb as $ke){
+            array_push($keys, $ke->id_mensaje);
+        }
+
+        if($qb == null){
             return Rsp::ok()
-                ->set('ok', true)
-                ->set('rsp', []);
+                    ->set('ok', false)
+                    ->set('rsp', []);
+        }
+
+        $verificar = [];
+       
+        foreach($acciones as $accion){
+            if(in_array($accion['id_mensaje'], $keys)){
+                if($accion['status'] != 1){
+                    array_push($verificar, $accion['id_mensaje']);
+                }
+            }
+        }
+
+        $arr = [];
+        foreach($qb as $ke){
+            if(in_array($ke->id_mensaje, $verificar)){
+                array_push($arr, $ke);
+            }
         }
         return Rsp::ok()
             ->set('ok', true)
-            ->set('rsp', $qb[0]);
+            ->set('rsp', $arr);
         
     }
 
