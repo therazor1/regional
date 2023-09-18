@@ -88,16 +88,25 @@ class utilizar extends _controller{
 
         
         $messageNow = ApiUsuario::getMessageStatic();
-        $seleccionados = [];
-        if($messageNow !== null){
-            $seleccionados = explode("-",$messageNow->productos_seleccionados);
-        }
-        $id_mensaje = $messageNow->id_mensaje;
+
+        
+        $id_mensaje = "";
         $data = $req->data([
             'modulo' => 'required',
             'id_usuario' => 'required',
             'id_producto' => 'required',
         ]);
+        $seleccionados = [];
+        if($messageNow !== null){
+            foreach($messageNow as $msg){
+                if(in_array($data->id_producto, explode("-",$msg->productos_seleccionados))){
+                    $seleccionados = explode("-",$msg->productos_seleccionados);
+                    $id_mensaje = $msg->id_mensaje;
+                }
+            }
+            // $seleccionados = explode("-",$messageNow->productos_seleccionados);
+        }
+
         // Instancia de Usuario
         $usuario = new Usuario($data->id_usuario);
 

@@ -69,7 +69,7 @@ class usuario extends _controller{
             LEFT JOIN mensajes ON mensajes.id = acciones_semanales.id_mensaje
             WHERE acciones_semanales.id_dia = $dia
             AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
-        ")->get()[0];
+        ")->get();
 
         return $qb;
 
