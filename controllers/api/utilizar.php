@@ -67,6 +67,9 @@ class utilizar extends _controller{
             $product->where('t.nombre', $slug);
             $product->where('tp.puntos_requeridos', '=', '0');
             $product = $product->get();
+            foreach ($product as $prd) {
+                $prd->mostrar = 1;
+            }
             return Rsp::ok()
                 ->set('ok', true)
                 ->set('productos' , $product);
