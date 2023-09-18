@@ -112,7 +112,7 @@ class usuario extends _controller{
 
         if($qb == null){
             return Rsp::ok()
-                    ->set('ok', false)
+                    ->set('ok', true)
                     ->set('rsp', []);
         }
 
