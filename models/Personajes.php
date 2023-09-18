@@ -6,13 +6,13 @@ namespace Models;
 class Personajes {
 
     const ZEN = "Zen";
-    const LUI = "Lui";
+    const LOUI = "Loui";
 
     public static function getPersonaje($personaje){
         if($personaje == "zen"){
             return self::ZEN;
-        }else if($personaje == "lui"){
-            return self::LUI;
+        }else if($personaje == "loui"){
+            return self::LOUI;
         }
     }
 
