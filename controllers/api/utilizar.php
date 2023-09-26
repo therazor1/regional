@@ -89,7 +89,6 @@ class utilizar extends _controller{
         
         $messageNow = ApiUsuario::getMessageStatic();
 
-        
         $id_mensaje = "";
         $data = $req->data([
             'modulo' => 'required',
@@ -106,7 +105,11 @@ class utilizar extends _controller{
             }
             // $seleccionados = explode("-",$messageNow->productos_seleccionados);
         }
-
+        if($seleccionados == []){
+            return Rsp::ok()
+                ->set('ok', false)
+                ->set('msg', "No puede realizar esta accion other product");
+        }
         // Instancia de Usuario
         $usuario = new Usuario($data->id_usuario);
 
@@ -122,7 +125,7 @@ class utilizar extends _controller{
         $inventario = json_decode($inventario, true);
 
         // Obtener acciones diaria
-        $accion = $usuario->getActionDiar();
+        $accion = $usuario->getActionDiar($id_mensaje);
 
         $slug = "";
         $mensaje = "";
@@ -141,8 +144,7 @@ class utilizar extends _controller{
             $slug = Tienda::MINIJUEGOS;
             $estado = "estado_game";
         }
-
-        if($accion[$id_mensaje]['status'] == 1){
+        if($accion->status == 1){
             return Rsp::ok()
                 ->set('ok', false)
                 ->set('msg', "Ya realizó esta acción diaria");
@@ -167,7 +169,6 @@ class utilizar extends _controller{
             }
 
             // Actualizar status de accion diaria
-            $accion[$id_mensaje]['status'] = 1;
             $usuario->updateActionDiar($accion);
 
             // Actualizar Puntos Usuario
@@ -181,8 +182,7 @@ class utilizar extends _controller{
             $Inventary->updateInventary($inventario);
 
             // Reemplzar texto
-            $mensaje = str_replace(["AVATAR", "PUNTOS"], [$usuario->avatar, $msjPuntos], $messageNow->retroalimentacion);
-
+            $mensaje = str_replace(["AVATAR", "PUNTOS"], [$usuario->avatar, $msjPuntos], $messageNow[0]->retroalimentacion);
             return Rsp::ok()
                     ->set('ok', true)
                     ->set('msg', $mensaje);

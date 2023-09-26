@@ -106,19 +106,24 @@ class Usuario extends BaseModel{
         return ($barra_estado <= 50) ? self::COLOR_ROJO : (($barra_estado <= 75) ? self::COLOR_AMARILLO : self::COLOR_AZUL);
     }
 
-    public function getActionDiar(){
-        $qb = QB::table('registro')->select(['accion_diaria'])->where('id_user', $this->id)->where('fecha', getToday())->get()[0];
-        $accion = json_decode($qb->accion_diaria, true);
+    public function getActionDiar($id_mensaje){
+        $hora = date("H");
+        $accion = QB::query("SELECT ad.id_mensaje, ad.id as id_accion, ad.status FROM accion_diaria ad
+            LEFT JOIN registro reg ON reg.id = ad.id_registro
+            WHERE reg.id_user = $this->id
+            AND ad.id_mensaje = $id_mensaje
+            AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
+            AND ad.fecha = '".getToday()."'
+        ")->get()[0];
         return $accion;
     }
 
     public function updateActionDiar($action){
-        $action = json_encode($action);
-        return QB::table('registro')
-                ->where('id_user', $this->id)
+        return QB::table('accion_diaria')
+                ->where('id', $action->id_accion)
                 ->where('fecha', getToday())
                 ->update([
-                    'accion_diaria' => $action
+                    'status' => 1
                 ]);
     }
 
