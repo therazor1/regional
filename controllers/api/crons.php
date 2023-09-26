@@ -29,19 +29,18 @@ class crons extends _controller{
             $myData['estado_game '] = $user->estado_game;
             $myData['date_created'] = date("Y-m-d H:i:s");
             $myData['fecha'] = date("Y-m-d");
+            $insertId = QB::table("registro")->insert($myData);
             foreach($getAcctionDiary as $action){
-                $acct[$action->id_mensaje] = array(
-                    'hora' => $action->hora,
-                    'status' => 0,
-                    'id_mensaje' => $action->id_mensaje
-                );
+                $acciondiaria = [];
+                $acciondiaria['id_registro'] = $insertId;
+                $acciondiaria['id_mensaje'] = $action->id_mensaje;
+                $acciondiaria['hora'] = $action->hora;
+                $acciondiaria['fecha'] = date("Y-m-d");
+                $acciondiaria['status'] = 0;
+                QB::table("accion_diaria")->insert($acciondiaria);
+                $acciondiaria = [];
+
             }
-            $acct = json_encode($acct);
-            $myData['accion_diaria'] = $acct;
-            $acct = [];
-
-            QB::table("registro")->insert($myData);
-
 
 
         }

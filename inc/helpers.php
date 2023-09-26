@@ -395,7 +395,17 @@ function getTodayHours(){
 function minusOneDay(){
     // Obtener la fecha actual
     $fechaActual = date('Y-m-d');
-
     // Restar un día a la fecha actual
     return date('Y-m-d', strtotime($fechaActual . ' -1 day'));
+}
+
+function compareHours($last){
+    $hora1 = date('H');
+    $hora2 = new DateTime($last);
+    
+    $hora2_h = $hora2->format('H');
+    if($hora1 > $hora2_h){
+        return true;
+    }
+    return false;
 }

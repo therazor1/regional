@@ -32,7 +32,7 @@ class usuario extends _controller{
             WHERE acciones_semanales.id_dia = $dia
             AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
         ")->get();
-        
+
         $keys = [];
         foreach($qb as $ke){
             array_push($keys, $ke->id_mensaje);
@@ -64,6 +64,37 @@ class usuario extends _controller{
             ->set('ok', true)
             ->set('rsp', $arr);
 
+    }
+
+    public function getMessageNoUse(Req $req){
+
+        $data = $req->data([
+            'id_user' => 'required'
+        ]);
+
+        $acciones = QB::table('registro')
+                        ->select(['accion_diaria', 'fecha'])
+                        ->where('id_user', $data->id_user)
+                        ->whereBetween('fecha', minusOneDay(), getToday())
+                        ->get();
+        $listaAccionesNoUse = array();
+        foreach($acciones as $action){
+            $fecha = $action->fecha;
+            $acc = json_decode($action->accion_diaria, true);
+            foreach($acc as $ac){
+                if($ac['status'] == 0){
+                    if(compareHours($ac['hora'])){
+                        var_dump([$fecha][$ac]);
+                        // $listaAccionesNoUse[$fecha][$ac] = 1;
+                        // var_dump($listaAccionesNoUse[$fecha]);
+                        // echo "true";
+                    }
+                }
+            }
+        }
+        echo json_encode($listaAccionesNoUse);
+        $hora = date("H:i");
+        echo $hora;
     }
 
     public static function getMessageStatic(){

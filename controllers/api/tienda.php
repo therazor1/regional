@@ -124,6 +124,28 @@ class tienda extends _controller{
                 return $rsp;
             }
 
+            // Get modulo product
+            $moduloPrd = QB::table('tienda_productos tp')
+                            ->select([
+                                'ti.nombre'
+                            ])
+                            ->leftJoin('tienda ti', 'ti.id', '=', 'tp.id_tienda')
+                            ->where('tp.id', '=', $data->id_producto)
+                            ->get()[0]->nombre;
+            
+
+            // Get inventary
+            $inventario = QB::table('inventario')->select(['content'])->where('id_usuario', $data->id_usuario)->get()[0]->content;
+            $inventario = json_decode($inventario, true);
+            
+            if($moduloPrd == 'Minijuegos'){
+                if(isset($inventario[$moduloPrd][$data->id_producto])){
+                    return Rsp::ok()
+                        ->set('ok', true)
+                        ->set('msg', 'Ya adquirió este minijuego'); 
+                }
+            } 
+
             // Get info 
             $inf = self::getInfoUserInventary($data); 
             $pointsUser = intval($inf->puntos_usuario);
@@ -135,9 +157,7 @@ class tienda extends _controller{
                         ->set('msg', 'No tienes los suficientes puntos para adquirir este producto');
             }
 
-            // Get inventary
-            $inventario = QB::table('inventario')->select(['content'])->where('id_usuario', $data->id_usuario)->get()[0]->content;
-            $inventario = json_decode($inventario, true);
+           
 
             // Nuevo arreglo invetario
             $newInventary = self::newInventary($data->id_usuario, $inventario, $inf);
