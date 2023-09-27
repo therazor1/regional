@@ -32,8 +32,9 @@ class usuario extends _controller{
             AND TIME_FORMAT(ad.hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
         ")->get()[0];
 
-        $qb = QB::query("SELECT acciones_semanales.hora, mensajes.mensaje_accion, mensajes.productos_seleccionados, mensajes.retroalimentacion, mensajes.id as id_mensaje FROM acciones_semanales
+        $qb = QB::query("SELECT acciones_semanales.hora, mensajes.mensaje_accion, mensajes.productos_seleccionados, mensajes.retroalimentacion, mensajes.id as id_mensaje, es.nombre as estado_mensaje FROM acciones_semanales
             LEFT JOIN mensajes ON mensajes.id = acciones_semanales.id_mensaje
+            LEFT JOIN estados es ON es.id = mensajes.id_estados
             WHERE acciones_semanales.id_dia = $dia
             AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
         ")->get();
@@ -87,8 +88,9 @@ class usuario extends _controller{
             'id_user' => 'required'
         ]);
 
-        $acciones = QB::query("SELECT msj.mensaje_accion, msj.productos_seleccionados, msj.retroalimentacion, msj.id as id_mensaje, ad.hora, ad.status, ad.fecha FROM accion_diaria ad
+        $acciones = QB::query("SELECT msj.mensaje_accion, msj.productos_seleccionados, msj.retroalimentacion, msj.id as id_mensaje, ad.hora, ad.status, ad.fecha, es.nombre as estado_mensaje FROM accion_diaria ad
             LEFT JOIN mensajes msj ON msj.id = ad.id_mensaje
+            LEFT JOIN estados es ON es.id = msj.id_estados
             LEFT JOIN registro reg ON reg.id = ad.id_registro
             WHERE reg.id_user = $data->id_user
             AND ad.status = 0
@@ -139,8 +141,9 @@ class usuario extends _controller{
             AND TIME_FORMAT(ad.hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
         ")->get()[0];
 
-        $qb = QB::query("SELECT acciones_semanales.hora, mensajes.mensaje_accion, mensajes.productos_seleccionados, mensajes.retroalimentacion, mensajes.id as id_mensaje, tienda.slug as modulo FROM acciones_semanales
+        $qb = QB::query("SELECT acciones_semanales.hora, mensajes.mensaje_accion, mensajes.productos_seleccionados, mensajes.retroalimentacion, mensajes.id as id_mensaje, tienda.slug as modulo, es.nombre as estado_mensaje FROM acciones_semanales
             LEFT JOIN mensajes ON mensajes.id = acciones_semanales.id_mensaje
+            LEFT JOIN estados es ON es.id = mensajes.id_estados
             LEFT JOIN tienda ON tienda.id = mensajes.modulo
             WHERE acciones_semanales.id_dia = $dia
             AND tienda.slug = '$modulo'
