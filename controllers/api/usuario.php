@@ -92,7 +92,7 @@ class usuario extends _controller{
             LEFT JOIN registro reg ON reg.id = ad.id_registro
             WHERE reg.id_user = $data->id_user
             AND ad.status = 0
-            AND ad.fecha >= '" . minusOneDay() . "' AND ad.fecha < '" . getToday() . "'
+            AND ad.fecha >= '" . minusOneDay() . "' AND ad.fecha <= '" . getToday() . "'
         ")->get();
 
         return Rsp::ok()
