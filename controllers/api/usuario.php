@@ -126,12 +126,18 @@ class usuario extends _controller{
         $modulo = $data->modulo;
 
         // ID Acciones Completadas
-        $acciones = QB::table('registro')->select(['accion_diaria'])->where('id_user', $data->id_user)->where('fecha', getToday())->get()[0]->accion_diaria;
-        $acciones = json_decode($acciones, true);
+        // $acciones = QB::table('registro')->select(['accion_diaria'])->where('id_user', $data->id_user)->where('fecha', getToday())->get()[0]->accion_diaria;
+        // $acciones = json_decode($acciones, true);
         $hora = date("H");
         // $hora = '14';
         $dia = date('l');
         $dia = Dias::getDay($dia);
+        $acciones = QB::query("SELECT re.id, ad.status, ad.id_mensaje FROM registro re
+            LEFT JOIN accion_diaria ad ON ad.id_registro = re.id
+            WHERE re.id_user = $data->id_user
+            AND ad.fecha = '".getToday()."'
+            AND TIME_FORMAT(ad.hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
+        ")->get()[0];
 
         $qb = QB::query("SELECT acciones_semanales.hora, mensajes.mensaje_accion, mensajes.productos_seleccionados, mensajes.retroalimentacion, mensajes.id as id_mensaje, tienda.slug as modulo FROM acciones_semanales
             LEFT JOIN mensajes ON mensajes.id = acciones_semanales.id_mensaje
@@ -140,36 +146,57 @@ class usuario extends _controller{
             AND tienda.slug = '$modulo'
             AND TIME_FORMAT(hora, '%H:%i:%s') BETWEEN '$hora:00:00' AND '$hora:59:00'
         ")->get();
-        $keys = [];
-        foreach($qb as $ke){
-            array_push($keys, $ke->id_mensaje);
-        }
 
         if($qb == null){
             return Rsp::ok()
                     ->set('ok', true)
                     ->set('rsp', []);
         }
-
-        $verificar = [];
-       
-        foreach($acciones as $accion){
-            if(in_array($accion['id_mensaje'], $keys)){
-                if($accion['status'] != 1){
-                    array_push($verificar, $accion['id_mensaje']);
+        foreach($qb as $ke){
+            if($ke->id_mensaje == $acciones->id_mensaje){
+                if($acciones->status == 1){
+                    return Rsp::ok()
+                    ->set('ok', true)
+                    ->set('rsp', []);
+                }else{
+                    return Rsp::ok()
+                        ->set('ok', true)
+                        ->set('rsp', $ke);
                 }
             }
         }
+        // echo json_encode($acciones);
+        // exit;
+        // $keys = [];
+        // foreach($qb as $ke){
+        //     array_push($keys, $ke->id_mensaje);
+        // }
 
-        $arr = [];
-        foreach($qb as $ke){
-            if(in_array($ke->id_mensaje, $verificar)){
-                array_push($arr, $ke);
-            }
-        }
-        return Rsp::ok()
-            ->set('ok', true)
-            ->set('rsp', $arr);
+        // if($qb == null){
+        //     return Rsp::ok()
+        //             ->set('ok', true)
+        //             ->set('rsp', []);
+        // }
+
+        // $verificar = [];
+       
+        // foreach($acciones as $accion){
+        //     if(in_array($accion['id_mensaje'], $keys)){
+        //         if($accion['status'] != 1){
+        //             array_push($verificar, $accion['id_mensaje']);
+        //         }
+        //     }
+        // }
+
+        // $arr = [];
+        // foreach($qb as $ke){
+        //     if(in_array($ke->id_mensaje, $verificar)){
+        //         array_push($arr, $ke);
+        //     }
+        // }
+        // return Rsp::ok()
+        //     ->set('ok', true)
+        //     ->set('rsp', $arr);
         
     }
 
