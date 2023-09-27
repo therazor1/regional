@@ -197,6 +197,112 @@ class utilizar extends _controller{
 
     }
 
+    public function use_old(Req $req){
+        $data = $req->data([
+            'modulo' => 'required',
+            'id_usuario' => 'required',
+            'id_producto' => 'required',
+            'mensaje' => 'required',
+            'id_action' => 'required',
+        ]);
+
+        // Instancia de Usuario
+        $usuario = new Usuario($data->id_usuario);
+
+        // Instancia Registro
+        $registro = new Registro($data->id_usuario);
+
+        // Obtener Puntos
+        $puntos = $usuario->getPoints();
+
+        // Obtener inventario de usuario
+        $Inventary = new Inventario($data->id_usuario);
+        $inventario = $Inventary->getInventary();
+        $inventario = json_decode($inventario, true);
+
+        $slug = "";
+        $mensaje = "";
+        $estado = "";
+        if($data->modulo == "alimentacion"){
+            $slug = Tienda::ALIMENTACION;
+            $mensaje = Tienda::msjAlimentacion();
+            $estado = "estado_alimentacion";
+        }else if ($data->modulo == "salud"){
+            $slug = Tienda::SALUD;
+            $estado = "estado_salud";
+        }else if($data->modulo == "descanso"){
+            $slug = Tienda::DESCANSO;
+            $estado = "estado_descanso";
+        }else if($data->modulo == "minijuegos"){
+            $slug = Tienda::MINIJUEGOS;
+            $estado = "estado_game";
+        }
+
+        // Obtener acciones diaria
+        $accion = $usuario->getActionDiar($data->mensaje);
+
+        // Obtener mensaje
+        $messageNow = $usuario->getOneMessage($data->id_action);
+
+        if(intval($inventario[$slug][$data->id_producto]['cantidad']) > 0){
+            $nombre_producto = $inventario[$slug][$data->id_producto]['nombre_producto'];
+            $inventario[$slug][$data->id_producto]['cantidad'] = intval($inventario[$slug][$data->id_producto]['cantidad']) - 1;
+            $energia = $inventario[$slug][$data->id_producto]['energia'];
+
+            $puntos += intval($inventario[$slug][$data->id_producto]['puntos_obtenidos']);
+            $msjPuntos = strval($inventario[$slug][$data->id_producto]['puntos_obtenidos']);
+
+            if($inventario[$slug][$data->id_producto]['cantidad'] == 0){
+                unset($inventario[$slug][$data->id_producto]);
+            }
+
+            // Actualizar status de accion diaria
+            $usuario->updateActionDiar($accion);
+
+            // Actualizar Puntos Usuario
+            $usuario->updatePoints($puntos);
+
+            // Actualizar Energia Usuario
+            $usuario->updateEstadoUser($energia, $estado);
+            
+
+            // Actualizar Inventario
+            $Inventary->updateInventary($inventario);
+
+            // Reemplzar texto
+            $mensaje = str_replace(["AVATAR", "PUNTOS"], [$usuario->avatar, $msjPuntos], $messageNow[0]->retroalimentacion);
+            return Rsp::ok()
+                    ->set('ok', true)
+                    ->set('msg', $mensaje);
+        }else{
+            return Rsp::ok()
+                    ->set('ok', false)
+                    ->set('msg', "No puede realizar esta accion");
+            
+        }
+
+    }
+
+    public function getOneMessage(Req $req){
+
+        $data = $req->data([
+            'modulo' => 'required',
+            'mensaje' => 'required',
+            'id_action' => 'required'
+        ]);
+
+        $qb = QB::query("SELECT ad.id as id_accion, ad.hora, es.nombre as estado_mensaje, msj.id as id_mensaje, msj.retroalimentacion, msj.mensaje_accion, msj.productos_seleccionados FROM accion_diaria ad
+            LEFT JOIN mensajes msj ON msj.id = ad.id_mensaje
+            LEFT JOIN estados es ON es.id = msj.id_estados
+            WHERE ad.id = $data->id_action
+        ")->get();
+
+        return Rsp::ok()
+                ->set('ok',true)
+                ->set('data', $qb);        
+
+    }
+
 }
 
 

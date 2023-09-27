@@ -127,6 +127,18 @@ class Usuario extends BaseModel{
                 ]);
     }
 
+    public static function getOneMessage($id_action){
+
+        $qb = QB::query("SELECT ad.id as id_accion, ad.hora, es.nombre as estado_mensaje, msj.id as id_mensaje, msj.retroalimentacion, msj.mensaje_accion, msj.productos_seleccionados FROM accion_diaria ad
+            LEFT JOIN mensajes msj ON msj.id = ad.id_mensaje
+            LEFT JOIN estados es ON es.id = msj.id_estados
+            WHERE ad.id = $id_action
+        ")->get();
+
+        return $qb;
+    }
+
+
 }
 
 ?>

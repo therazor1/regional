@@ -88,7 +88,7 @@ class usuario extends _controller{
             'id_user' => 'required'
         ]);
 
-        $acciones = QB::query("SELECT ti.slug as modulo, msj.mensaje_accion, msj.productos_seleccionados, msj.retroalimentacion, msj.id as id_mensaje, ad.hora, ad.status, ad.fecha, es.nombre as estado_mensaje FROM accion_diaria ad
+        $acciones = QB::query("SELECT ti.slug as modulo, msj.mensaje_accion, msj.productos_seleccionados, msj.retroalimentacion, msj.id as id_mensaje, ad.hora, ad.status, ad.fecha, es.nombre as estado_mensaje, ad.id as id_accion_diaria FROM accion_diaria ad
             LEFT JOIN mensajes msj ON msj.id = ad.id_mensaje
             LEFT JOIN estados es ON es.id = msj.id_estados
             LEFT JOIN registro reg ON reg.id = ad.id_registro
