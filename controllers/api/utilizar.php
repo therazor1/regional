@@ -12,14 +12,17 @@ use Models\Registro;
 use Models\Tienda;
 use Models\Usuario;
 
-class utilizar extends _controller{
+class utilizar extends _controller
+{
 
-    public function __construct(){
+    public function __construct()
+    {
         parent::__construct(false);
     }
 
 
-    public function index(Req $req){
+    public function index(Req $req)
+    {
 
         $data = $req->data([
             'modulo' => 'required',
@@ -30,16 +33,16 @@ class utilizar extends _controller{
         $inventario = QB::table('inventario')->select(['content'])->where('id_usuario', $data->id_usuario)->get()[0]->content;
         $inventario = json_decode($inventario, true);
         $slug = "";
-        if($data->modulo == "alimentacion"){
+        if ($data->modulo == "alimentacion") {
             $slug = "Alimentación";
-        }else if ($data->modulo == "salud"){
+        } else if ($data->modulo == "salud") {
             $slug = "Salud y aseo";
-        }else if($data->modulo == "descanso"){
+        } else if ($data->modulo == "descanso") {
             $slug = "Descanso";
-        }else if($data->modulo == 'minijuegos'){
+        } else if ($data->modulo == 'minijuegos') {
             $slug = "Minijuegos";
         }
-        
+
         $productos = QB::table('tienda_productos tp');
         $productos->select([
             'tp.id',
@@ -53,40 +56,41 @@ class utilizar extends _controller{
         $productos->where('t.nombre', $slug);
         $productos = $productos->get();
 
-        if($inventario == null){
-        
+        if ($inventario == null) {
+
             return Rsp::ok()
                 ->set('ok', false)
-                ->set('productos' , []);
+                ->set('productos', []);
         }
 
         $keys = array_keys($inventario[$slug]);
         foreach ($productos as $producto) {
-            if($keys == null){
+            if ($keys == null) {
                 $producto->mostrar = 0;
-            }else{
-                $id = intval($producto->id); 
-                if(in_array($id, $keys)){
+            } else {
+                $id = intval($producto->id);
+                if (in_array($id, $keys)) {
                     $producto->mostrar = 1;
-                }else{
+                } else {
                     $producto->mostrar = 0;
                 }
 
-                if($producto->puntos_requeridos == 0){
+                if ($producto->puntos_requeridos == 0) {
                     $producto->mostrar = 1;
                 }
             }
             unset($producto->puntos_requeridos);
         }
         return Rsp::ok()
-                ->set('ok', $productos !== [] ? true : false)
-                ->set('productos' , $productos);
+            ->set('ok', $productos !== [] ? true : false)
+            ->set('productos', $productos);
     }
 
 
-    public function use(Req $req){
+    public function use (Req $req)
+    {
 
-        
+
         $messageNow = ApiUsuario::getMessageStatic();
 
         $id_mensaje = "";
@@ -96,16 +100,16 @@ class utilizar extends _controller{
             'id_producto' => 'required',
         ]);
         $seleccionados = [];
-        if($messageNow !== null){
-            foreach($messageNow as $msg){
-                if(in_array($data->id_producto, explode("-",$msg->productos_seleccionados))){
-                    $seleccionados = explode("-",$msg->productos_seleccionados);
+        if ($messageNow !== null) {
+            foreach ($messageNow as $msg) {
+                if (in_array($data->id_producto, explode("-", $msg->productos_seleccionados))) {
+                    $seleccionados = explode("-", $msg->productos_seleccionados);
                     $id_mensaje = $msg->id_mensaje;
                 }
             }
             // $seleccionados = explode("-",$messageNow->productos_seleccionados);
         }
-        if($seleccionados == []){
+        if ($seleccionados == []) {
             return Rsp::ok()
                 ->set('ok', false)
                 ->set('msg', "No puede realizar esta accion other product");
@@ -130,33 +134,33 @@ class utilizar extends _controller{
         $slug = "";
         $mensaje = "";
         $estado = "";
-        if($data->modulo == "alimentacion"){
+        if ($data->modulo == "alimentacion") {
             $slug = Tienda::ALIMENTACION;
             $mensaje = Tienda::msjAlimentacion();
             $estado = "estado_alimentacion";
-        }else if ($data->modulo == "salud"){
+        } else if ($data->modulo == "salud") {
             $slug = Tienda::SALUD;
             $estado = "estado_salud";
-        }else if($data->modulo == "descanso"){
+        } else if ($data->modulo == "descanso") {
             $slug = Tienda::DESCANSO;
             $estado = "estado_descanso";
-        }else if($data->modulo == "minijuegos"){
+        } else if ($data->modulo == "minijuegos") {
             $slug = Tienda::MINIJUEGOS;
             $estado = "estado_game";
         }
-        if($accion->status == 1){
+        if ($accion->status == 1) {
             return Rsp::ok()
                 ->set('ok', false)
                 ->set('msg', "Ya realizó esta acción diaria");
         }
 
-        if(!in_array($data->id_producto, $seleccionados)){
+        if (!in_array($data->id_producto, $seleccionados)) {
             return Rsp::ok()
                 ->set('ok', false)
                 ->set('msg', "No puede realizar esta accion other product");
         }
 
-        if(intval($inventario[$slug][$data->id_producto]['cantidad']) > 0){
+        if (intval($inventario[$slug][$data->id_producto]['cantidad']) > 0) {
             $nombre_producto = $inventario[$slug][$data->id_producto]['nombre_producto'];
             $inventario[$slug][$data->id_producto]['cantidad'] = intval($inventario[$slug][$data->id_producto]['cantidad']) - 1;
             $energia = $inventario[$slug][$data->id_producto]['energia'];
@@ -164,7 +168,7 @@ class utilizar extends _controller{
             $puntos += intval($inventario[$slug][$data->id_producto]['puntos_obtenidos']);
             $msjPuntos = strval($inventario[$slug][$data->id_producto]['puntos_obtenidos']);
 
-            if($inventario[$slug][$data->id_producto]['cantidad'] == 0){
+            if ($inventario[$slug][$data->id_producto]['cantidad'] == 0) {
                 unset($inventario[$slug][$data->id_producto]);
             }
 
@@ -176,7 +180,7 @@ class utilizar extends _controller{
 
             // Actualizar Energia Usuario
             $usuario->updateEstadoUser($energia, $estado);
-            
+
 
             // Actualizar Inventario
             $Inventary->updateInventary($inventario);
@@ -184,20 +188,21 @@ class utilizar extends _controller{
             // Reemplzar texto
             $mensaje = str_replace(["AVATAR", "PUNTOS"], [$usuario->avatar, $msjPuntos], $messageNow[0]->retroalimentacion);
             return Rsp::ok()
-                    ->set('ok', true)
-                    ->set('msg', $mensaje);
-        }else{
+                ->set('ok', true)
+                ->set('msg', $mensaje);
+        } else {
             return Rsp::ok()
-                    ->set('ok', false)
-                    ->set('msg', "No puede realizar esta accion");
-            
+                ->set('ok', false)
+                ->set('msg', "No puede realizar esta accion");
+
         }
-        
+
 
 
     }
 
-    public function use_old(Req $req){
+    public function use_old(Req $req)
+    {
         $data = $req->data([
             'modulo' => 'required',
             'id_usuario' => 'required',
@@ -223,17 +228,17 @@ class utilizar extends _controller{
         $slug = "";
         $mensaje = "";
         $estado = "";
-        if($data->modulo == "alimentacion"){
+        if ($data->modulo == "alimentacion") {
             $slug = Tienda::ALIMENTACION;
             $mensaje = Tienda::msjAlimentacion();
             $estado = "estado_alimentacion";
-        }else if ($data->modulo == "salud"){
+        } else if ($data->modulo == "salud") {
             $slug = Tienda::SALUD;
             $estado = "estado_salud";
-        }else if($data->modulo == "descanso"){
+        } else if ($data->modulo == "descanso") {
             $slug = Tienda::DESCANSO;
             $estado = "estado_descanso";
-        }else if($data->modulo == "minijuegos"){
+        } else if ($data->modulo == "minijuegos") {
             $slug = Tienda::MINIJUEGOS;
             $estado = "estado_game";
         }
@@ -244,7 +249,7 @@ class utilizar extends _controller{
         // Obtener mensaje
         $messageNow = $usuario->getOneMessage($data->id_action);
 
-        if(intval($inventario[$slug][$data->id_producto]['cantidad']) > 0){
+        if (intval($inventario[$slug][$data->id_producto]['cantidad']) > 0) {
             $nombre_producto = $inventario[$slug][$data->id_producto]['nombre_producto'];
             $inventario[$slug][$data->id_producto]['cantidad'] = intval($inventario[$slug][$data->id_producto]['cantidad']) - 1;
             $energia = $inventario[$slug][$data->id_producto]['energia'];
@@ -252,7 +257,7 @@ class utilizar extends _controller{
             $puntos += intval($inventario[$slug][$data->id_producto]['puntos_obtenidos']);
             $msjPuntos = strval($inventario[$slug][$data->id_producto]['puntos_obtenidos']);
 
-            if($inventario[$slug][$data->id_producto]['cantidad'] == 0){
+            if ($inventario[$slug][$data->id_producto]['cantidad'] == 0) {
                 unset($inventario[$slug][$data->id_producto]);
             }
 
@@ -264,7 +269,7 @@ class utilizar extends _controller{
 
             // Actualizar Energia Usuario
             $usuario->updateEstadoUser($energia, $estado);
-            
+
 
             // Actualizar Inventario
             $Inventary->updateInventary($inventario);
@@ -272,20 +277,21 @@ class utilizar extends _controller{
             // Reemplzar texto
             $mensaje = str_replace(["AVATAR", "PUNTOS"], [$usuario->avatar, $msjPuntos], $messageNow[0]->retroalimentacion);
             return Rsp::ok()
-                    ->set('ok', true)
-                    ->set('msg', $mensaje);
-        }else{
+                ->set('ok', true)
+                ->set('msg', $mensaje);
+        } else {
             return Rsp::ok()
-                    ->set('ok', false)
-                    ->set('msg', "No puede realizar esta accion");
-            
+                ->set('ok', false)
+                ->set('msg', "No puede realizar esta accion");
+
         }
 
     }
 
-    public function getOneMessage(Req $req){
+    public function getOneMessage(Req $req)
+    {
 
-        $data = $req->data([ 
+        $data = $req->data([
             'modulo' => 'required',
             'mensaje' => 'required',
             'id_action' => 'required'
@@ -298,8 +304,8 @@ class utilizar extends _controller{
         ")->get();
 
         return Rsp::ok()
-                ->set('ok',true)
-                ->set('data', $qb);        
+            ->set('ok', true)
+            ->set('data', $qb);
 
     }
 

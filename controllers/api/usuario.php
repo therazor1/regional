@@ -165,7 +165,7 @@ class usuario extends _controller{
                 }else{
                     return Rsp::ok()
                         ->set('ok', true)
-                        ->set('rsp', $ke);
+                        ->set('rsp', [$ke]);
                 }
             }
         }
