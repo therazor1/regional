@@ -285,7 +285,7 @@ class utilizar extends _controller{
 
     public function getOneMessage(Req $req){
 
-        $data = $req->data([
+        $data = $req->data([ 
             'modulo' => 'required',
             'mensaje' => 'required',
             'id_action' => 'required'
